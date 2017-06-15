@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>百度新闻</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="container">
+    <!-- 头部 -->
+        <header class="cf">
+            <a href="#" class="logo">
+                <span class="iconfont">
+                    &#xe7df;
+                </span>
+            </a>
+            <a href="#" class="user">
+                <span class="iconfont">
+                    &#xe60c;
+                </span>
+            </a>
+            <a href="#" class="more">
+                <span class="iconfont">
+                    &#xe625;
+                </span>
+            </a>
+            <a href="#" class="search">
+                <span class="iconfont">
+                    &#xf0026;
+                </span>
+            </a>
+        </header>
+        <!-- 导航 -->
+        <nav>
+            <ul>
+                <li><a href="#">精选</a><i></i></li>
+                <li><a href="#">百家</a><i></i></li>
+                <li><a href="#">本地</a><i></i></li>
+                <li><a href="#">图片</a><i></i></li>
+                <li><a href="#">娱乐</a><i></i></li>
+                <li><a href="#">社会</a><i></i></li>
+                <li><a href="#">军事</a><i></i></li>
+                <li><a href="#">女人</a><i></i></li>
+                <li><a href="#">搞笑</a><i></i></li>
+                <li><a href="#">互联网</a><i></i></li>
+                <li><a href="#">更多</a><i></i></li>
+            </ul>
+        </nav>
+        <!-- 内容 -->
+        <article class="news-main">
+            <ul>
+                <!-- 动态添加新闻 -->
+            </ul>
+        </article>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        var deviceWidth = $('body').width();
+
+        $('nav li').each(function(index, item) {
+            if ($(this).find('a').html().split('').length > 2) {
+                $(this).width(deviceWidth / 3);
+            } else {
+                $(this).width(deviceWidth / 6);
+            }
+        });
+    });
+    </script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>

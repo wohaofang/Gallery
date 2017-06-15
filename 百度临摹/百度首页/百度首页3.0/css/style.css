@@ -1,0 +1,465 @@
+
+/*reset 样式重置*/
+
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img,
+div,
+input,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+    vertical-align: top;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+    
+    /*解决Safari 搜索框问题*/
+    -webkit-appearance:none;
+}
+
+
+/*公用样式*/
+
+.clear {
+    overflow: hidden;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+/*公用样式end*/
+
+/*
+* 白色三角形
+* 白色三角形压在灰色三角形，形成带边框的箭头
+*/
+
+.triangle_sml {
+    position: absolute;
+    top: 26px;
+    z-index: 300;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 7px solid #fff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+
+/*灰色三角形*/
+
+.triangle_up {
+    position: absolute;
+    top: 25px;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-bottom: 8px solid rgb(227, 227, 227);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+
+/*三角形的位置*/
+
+#triangle_up1 {
+    right: 110px;
+}
+
+#triangle_up2 {
+    right: 190px;
+}
+
+#triangle_1 {
+    right: 111px;
+}
+
+#triangle_2 {
+    right: 191px;
+}
+
+
+/*三角形的位置 end*/
+
+
+/*导航栏*/
+
+nav {
+    height: 32px;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    z-index: 0;
+
+    /*无效果*/
+    *display: block;
+    *border-bottom: 1px solid #ebebeb;
+
+    /*IE8 导航边框*/
+    display: block\0;
+    border-bottom: 1px solid #ebebeb\0;
+}
+
+nav .left li,
+nav .right li {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    margin-left: 15px;
+
+    /*ie下display：inline-block失效问题*/
+    *zoom: 1;
+    *display: inline;
+}
+
+nav .left a,
+nav .right a {
+    color: #555;
+}
+
+nav .left a:hover {
+    color: #333;
+}
+
+nav .right a:hover {
+    color: #333;
+}
+
+nav .right ul a {
+    font-weight: bold;
+}
+
+nav .right {
+    margin-left: 15px;
+}
+
+nav .right .more {
+    background: #3288ff;
+    width: 86px;
+    height: 33px;
+    text-align: center;
+}
+
+nav .right .more a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*导航栏 end*/
+
+
+/*logo*/
+
+.logo {
+    height: 129px;
+    width: 270px;
+    margin: 100px auto 0;
+}
+
+.logo img {
+    height: 129px;
+    width: 270px;
+}
+
+
+/*logo end*/
+
+
+/*搜索*/
+
+.search {
+    width: 638px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.search_text {
+    width: 536px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #b8b8b8;
+    border-right: none;
+    padding-left: 5px;
+
+    /*ie67光标问题*/
+    +padding-left: 5px;
+    +line-height: 40px;
+}
+
+.search_btn {
+    width: 102px;
+    height: 40px;
+    background: #3288ff;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+
+    /*IE678 浮动问题*/
+    margin-right: -6px\9;
+    height: 42px\9;
+}
+
+.search_btn:hover {
+    background: rgb(49, 126, 243);
+    cursor: pointer;
+    text-shadow: 0 1px 1 #B8B8B8;
+}
+
+.search_text:hover {
+    border: 1px solid #999;
+    border-right: none;
+}
+
+.search_text:focus {
+    border: 1px solid #3288FF;
+    border-right: none;
+}
+
+.search span {
+    color: #b8b8b8;
+}
+
+
+/*小图标的位置*/
+
+.search p {
+    width: 80px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+}
+
+
+/*搜索 end*/
+
+
+/*底部信息*/
+
+footer {
+    text-align: center;
+    font-size: 12px;
+
+    /*兼容IE67下footer居中问题*/
+    +display: block;
+    +margin: 0 auto;
+}
+
+footer p,
+footer p span,
+footer p a {
+    color: #a1a1a1;
+    line-height: 14px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+footer p img {
+    width: 14px;
+    height: 16px;
+    padding: 0 5px;
+}
+
+footer .police a {
+    text-decoration: none;
+}
+
+footer .police a:hover {
+    text-decoration: underline;
+}
+
+
+/*底部信息 end*/
+
+
+/*包裹层*/
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    font-family: arial;
+}
+
+.wrap1 .nav_info {
+    right: 80px;
+}
+
+.wrap2 .nav_info {
+    right: 160px;
+}
+
+.wrap1,
+.wrap2 {
+    display: none;
+}
+
+
+/* 
+ * hover后的东西要么是同级，要么是子级，
+ * 所以弹窗不能用hover实现了，把弹窗放到nav里，由于写了两个ul,li样式互相影响，最开始的时候一定要把结构想明白！
+*/
+
+
+/*导航弹窗*/
+
+
+/*更多产品内容*/
+
+#more_content {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 84px;
+    background: rgb(249, 249, 249);
+    border-left: 1px solid rgb(231, 231, 231);
+    border-right: 1px solid rgb(231, 231, 231)
+}
+
+#more_content ul .title {
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+#more_content ul .title:hover {
+    text-decoration: none;
+}
+
+#more_content ul li {
+    width: 60px;
+    height: 76px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    display: block;
+}
+
+#more_content ul li:hover {
+    text-decoration: underline;
+}
+
+#more_content ul li img {
+    margin-top: 10px;
+}
+
+#more_content ul a {
+    display: block;
+    font-size: 12px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #888;
+}
+
+#more_content ul .all_product {
+    margin-top: 10px;
+    width: 70px;
+    border-bottom: none;
+}
+
+#more_content ul .all_product a {
+    color: #666
+}
+
+
+/*设置和个人信息*/
+
+.nav_info {
+    width: 70px;
+    position: fixed;
+    top: 32px;
+    background: #fff;
+    border: 1px rgb(227, 227, 227) solid;
+    box-shadow: 2px 2px 6px rgb(227, 227, 227);
+}
+
+.nav_info li {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.nav_info li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #555555;
+    display: block;
+    font-family: arial;
+}
+
+.nav_info li a:hover {
+    background: #3288FF;
+    color: #fff;
+}
+
+
+/*弹窗 end*/
+
+
+/*搜索框的小图标*/
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('http://at.alicdn.com/t/font_1471577192_574727.eot');
+    /* IE9*/
+    src: url('http://at.alicdn.com/t/font_1471577192_574727.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('http://at.alicdn.com/t/font_1471577192_574727.woff') format('woff'), /* chrome、firefox */
+    url('http://at.alicdn.com/t/font_1471577192_574727.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('http://at.alicdn.com/t/font_1471577192_574727.svg#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+
+/*服务器环境会自动检测协议，引用的时候默认使用了http协议，本机浏览就不会调用协议
+ * 解决方案：需要补全url()里面的内容，在//前面加上http:   就可以了  */
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    color: #b8b8b8;
+    cursor: pointer;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont:hover {
+    color: #3288FF;
+}
