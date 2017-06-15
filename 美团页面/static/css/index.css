@@ -1,0 +1,258 @@
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+header {
+    height: 29px;
+    font-size: 12px;
+    border-top: 1px solid #eee;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #ddd, 0 0 5px 3px #eee;
+    background: #f9f9f9;
+}
+
+
+/*==============  最顶部导航栏  ======================*/
+
+.hd-nav {
+    position: relative;
+    margin: 0 auto;
+    z-index: 90;
+}
+
+.user-keep {
+    padding: 6px 8px 6px 0;
+    height: 16px;
+    float: left;
+    vertical-align: top;
+}
+
+.user-keep a {
+    color: #666;
+    text-decoration: none;
+}
+
+.user-info {
+    float: left;
+    display: inline-block;
+    padding: 6px 8px 6px 0;
+    height: 16px;
+    color: #666;
+    vertical-align: top;
+}
+
+.user-login {
+    padding: 0 5px 0 10px;
+    color: #f76120;
+}
+
+.user-signup {
+    padding: 0 10px 0 5px;
+    color: #666;
+    border-right: 1px solid #ddd;
+}
+
+.user-orders {
+    float: left;
+    display: inline-block;
+    padding: 6px 8px;
+    height: 16px;
+    vertical-align: top;
+}
+
+.user-orders a {
+    color: #666;
+}
+
+.dropdown {
+    float: left;
+    position: relative;
+    vertical-align: top;
+}
+
+.dropdown-toggle {
+    position: relative;
+    display: inline-block;
+    height: 16px;
+    padding: 6px 20px 6px 12px;
+    margin: 0 1px;
+    color: #666;
+    z-index: 93;
+}
+
+.tri {
+    position: absolute;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    font-size: 0;
+    border: 3px dashed transparent;
+}
+
+.tri-dropdown {
+    top: 14px;
+    right: 7px;
+    border-top: 3px solid #999;
+    -webkit-transition: -webkit-transform .3s linear;
+}
+
+.dropdown-toggle .vertical-bar {
+    position: absolute;
+    right: -2px;
+    top: 9px;
+    display: block;
+    height: 12px;
+    width: 1px;
+    background: #ddd;
+    z-index: 94;
+}
+
+.dropdown-open .dropdown-toggle {
+    margin: 0;
+    text-decoration: none;
+    background: #fff;
+    color: #2bb8aa;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    box-shadow: 1px -1px 2px rgba(203, 203, 203, .5);
+}
+
+.dropdown-open .tri-dropdown {
+    top: 11px;
+    border-top-color: transparent;
+    border-bottom: 3px solid #2bb8aa;
+}
+
+.dropdown-open .vertical-bar {
+    display: none;
+}
+
+.dropdown-menu {
+    transition: 0.5s all ease;
+    position: absolute;
+    display: none;
+    top: 27px;
+    right: 0;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    color: #666;
+    background: #fff;
+    z-index: 92;
+    box-shadow: 1px 1px 2px rgba(203, 203, 203, .5);
+}
+
+.user-orders a:hover {
+    color: #2BB8AA;
+}
+
+.dropdown-menu-account {
+    width: 80px;
+}
+
+.dropdown-menu-help {
+    width: 92px;
+}
+
+.dropdown-menu-merchant {
+    width: 97px;
+}
+
+.dropdown-menu-recruit {
+    width: 120px;
+}
+
+.dropdown-menu-more {
+    width: 80px;
+}
+
+.dropdown-menu-history {
+    width: 219px;
+}
+
+.dropdown-menu-item {
+    display: block;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    background: #fff;
+    color: #666;
+    transition: background .2s ease-in;
+}
+
+.dropdown-menu-item:hover {
+    color: #2bb8aa;
+    background: #f9f9f9;
+    text-decoration: none;
+}
+
+.dropdown-menu-deal .dropdown-menu-item {
+    padding: 10px 13px;
+    border-bottom: 1px dotted #eee;
+    height: 55px;
+    overflow: hidden;
+    color: #666;
+    transition: background .2s ease-in;
+}
+
+.dropdown-menu-deal .dropdown-menu-item .deal-link {
+    padding: 0;
+    color: #666;
+}
+
+.dropdown-menu-deal .dropdown-menu-item .deal-link:hover {
+    color: #2bb8aa;
+    text-decoration: none;
+}
+
+.dropdown-menu-deal .dropdown-menu-item a {
+    text-decoration: none;
+}
+
+.deal-link .deal-cover {
+    float: left;
+    margin: 2px 10px 0 0;
+    width: 80px;
+    height: 50px;
+}
+
+.dropdown-menu-deal .dropdown-menu-item .deal-title {
+    height: 32px;
+    margin-bottom: 4px;
+    line-height: 16px;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.dropdown-menu-deal .dropdown-menu-item .deal-price-w {
+    height: 18px;
+    display: block;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dropdown-menu-deal .dropdown-menu-item .deal-price {
+    padding-right: 10px;
+    font: 700 12px/12px arial, sans-serif;
+    color: #f76120;
+}
+
+.dropdown-menu-history .old-price {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.dropdown-menu-history .clear {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.dropdown-menu-history .clear-btn {
+    color: #2bb8aa;
+}

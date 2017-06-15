@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="icon" href="../static/images/title.ico">
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/list.css">
+    <script type="text/javascript" src='../js/list.js'></script>
+</head>
+
+<body>
+	<!-- 遮罩 -->
+		<div class="mt-overlay-container">
+			<div class="mt-dialog">
+				<a href="javascript:;" class="close">关闭</a>
+				<div class="mt-dialog-body">
+					<div class="result-box">
+						<div class="alert-table"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mt-overlay-mask"></div>
+    <!-- 遮罩 end -->
+    <!-- 头部 -->
+		<header>
+			<!--  顶部导航  -->
+			<div class="hd">
+				<div class="hd-nav w-980 cf">
+					<ul class="user-box">
+						<li class="user-keep">
+							<a href="javascript:;" id="star-a">
+								<i class="icon-keep">
+                        		<img src="../static/images/star.png" id="star">
+                        	</i> 收藏美团
+							</a>
+						</li>
+						<li class="user-info">
+							<a href="javascript:;" class="user-login">登录</a>
+							<a href="javascript:;" class="user-signup">注册</a>
+						</li>
+					</ul>
+					<ul class="order-box" id="user-w">
+						<li class="user-orders">
+							<a href="javascript:;">我的订单</a>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span>我的美团</span>
+								<i class="tri tri-dropdown"></i>
+								<i class="vertical-bar"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-account">
+								<li>
+									<a href="javascript:;" class="dropdown-menu-item">我的订单</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="dropdown-menu-item">我的评价</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="dropdown-menu-item">我的收藏</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="dropdown-menu-item">抵用券</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="dropdown-menu-item">我的余额</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="dropdown-menu-item">账户设置</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span>最近浏览</span>
+								<i class="tri tri-dropdown"></i>
+								<i class="vertical-bar"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-deal dropdown-menu-history">
+								<ul>
+									<li class="dropdown-menu-item">
+										<a class="deal-link" href="javascript:;">
+											<img class="deal-cover" src="../static/images/34bd4e361a7a8f512dbdef8a851574b642737.jpg">
+										</a>
+										<h5 class="deal-title">
+										<a class="deal-link" href="javascript:;">味多美俏皮萌宝蛋糕1个</a>
+									</h5>
+										<a class="deal-price-w" href="javascript:;">
+											<em class="deal-price">¥159</em>
+											<span class="old-price">168</span>
+										</a>
+									</li>
+									<li class="dropdown-menu-item">
+										<a class="deal-link" href="javascript:;">
+											<img class="deal-cover" src="../static/images/1d3938faae980273a9418ce2cbb2da84145274.jpg">
+										</a>
+										<h5 class="deal-title">
+										<a class="deal-link" href="javascript:;">金源福城肥牛火锅代金券1张</a>
+									</h5>
+										<a class="deal-price-w" href="javascript:;">
+											<em class="deal-price">¥85</em>
+											<span class="old-price">100</span>
+										</a>
+									</li>
+									<li class="dropdown-menu-item">
+										<a class="deal-link" href="javascript:;">
+											<img class="deal-cover" src="../static/images/1e50a6437d4265d5319de4c449120864164122.jpg">
+										</a>
+										<h5 class="deal-title">
+										<a class="deal-link" href="javascript:;">佑米造型-单人洗剪吹1份</a>
+									</h5>
+										<a class="deal-price-w" href="javascript:;">
+											<em class="deal-price">¥29.8</em>
+											<span class="old-price">38</span>
+										</a>
+									</li>
+								</ul>
+								<p class="clear">
+									<a class="clear-btn" href="javascript:;">清空最近浏览记录</a>
+								</p>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span>联系客服</span>
+								<i class="tri tri-dropdown"></i>
+								<i class="vertical-bar"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-help">
+								<ul>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">申请退款</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">申请退换货</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">查看美团券</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">换绑手机号</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">常见问题</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span>我是商家</span>
+								<i class="tri tri-dropdown"></i>
+								<i class="vertical-bar"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-merchant">
+								<ul>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">登录商家中心</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">我想合作</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">手机免费开店</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">商家营销平台</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span>代理商招募</span>
+								<i class="tri tri-dropdown"></i>
+								<i class="vertical-bar"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-recruit">
+								<ul>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">餐饮代理商招募</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">非餐饮代理商招募</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="dropdown">
+							<a href="javascript:;" class="dropdown-toggle">
+								<span>更多</span>
+								<i class="tri tri-dropdown"></i>
+							</a>
+							<div class="dropdown-menu dropdown-menu-more">
+								<ul>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">手机版</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">邮件订阅</a>
+									</li>
+									<li>
+										<a href="javascript:;" class="dropdown-menu-item">邀请好友</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--  搜索框    -->
+			<div class="search w-980 cf">
+				<h1>
+    			<a href="javascript:;" class="logo"></a>
+    		</h1>
+				<div class="city-info">
+					<h2>
+    				<a class="city-info-name" href="javascript:;">北京</a>
+    			</h2>
+					<a class="city-info-toggle" href="javascript:;">切换城市</a>
+				</div>
+				<div>
+					<div class="search-box">
+						<form class="search-box-form cf">
+							<div id="search-box-tabs" class="search-box-tabs">
+								<span class="tri"></span>
+								<ul class="search-box-tabs-main">
+									<li class="search-box-main">团购</li>
+									<li class="search-box-main">商家</li>
+								</ul>
+							</div>
+							<input type="text" class="search-box-input" placeholder="请输入商品名称、地址等">
+							<input type="button" class="search-box-button" value="搜索">
+						</form>
+						<div class="search-box-hot">
+							<div class="s-hot">
+								<a href="javascript:;" class="hot-link">虾吃虾涮</a>
+								<a href="javascript:;">烤肉</a>
+								<a href="javascript:;">东来顺</a>
+								<a href="javascript:;">好伦哥</a>
+								<a href="javascript:;">蛋糕</a>
+								<a href="javascript:;">烤鱼</a>
+								<a href="javascript:;">新辣道</a>
+								<a href="javascript:;">火炉火</a>
+								<a href="javascript:;">储值卡</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" class="site-commitment">
+					<span class="commitment-item">
+    				<i class="commitment-retire"></i>
+    				随时退
+    			</span>
+					<span class="commitment-item">
+    				<i class="commitment-free"></i>
+    				不满意免单
+    			</span>
+					<span class="commitment-item">
+    				<i class="commitment-expire"></i>
+    				过期退
+    			</span>
+				</a>
+			</div>
+		</header>
+	<!-- 头部 end -->
+	<!-- aside 导航  -->
+	    <div class="site-nav">
+	        <div class="site-nav-inner w-980">
+	            <div id="m-site-nav" class="site-nav-l">
+	                <span  class="site-span">
+						全部分类
+					</span>
+	                <div id="m-aside" class="aside">
+	                    <div class="aside-box">
+	                        <div id="m-afood" class="asides">
+	                            <div class="aside-z aside-first">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">美食</a></p>
+	                                    <span><a href="javascript:;">自助餐</a></span>
+	                                    <span><a href="javascript:;">代金券</a></span>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">美食</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">代金券</a></li>
+	                                        <li><a href="javascript:;">甜点饮品</a></li>
+	                                        <li><a class="col" href="javascript:;">火锅</a></li>
+	                                        <li><a class="col" href="javascript:;">自助餐</a></li>
+	                                        <li><a href="javascript:;">小吃快餐</a></li>
+	                                        <li><a href="javascript:;">日韩料理</a></li>
+	                                        <li><a href="javascript:;">西餐</a></li>
+	                                        <li><a href="javascript:;">聚餐宴请</a></li>
+	                                        <li><a href="javascript:;">烧烤烤肉</a></li>
+	                                        <li><a href="javascript:;">东北菜</a></li>
+	                                        <li><a href="javascript:;">川湘菜</a></li>
+	                                        <li><a href="javascript:;">江浙菜</a></li>
+	                                        <li><a href="javascript:;">香锅烤鱼</a></li>
+	                                        <li><a href="javascript:;">粤港菜</a></li>
+	                                        <li><a href="javascript:;">中式烧烤/烤串</a></li>
+	                                        <li><a href="javascript:;">西北菜</a></li>
+	                                    </ul>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">咖啡酒吧茶馆</a></li>
+	                                        <li><a href="javascript:;">云贵菜</a></li>
+	                                        <li><a href="javascript:;">东南亚菜</a></li>
+	                                        <li><a href="javascript:;">海鲜</a></li>
+	                                        <li><a href="javascript:;">素食</a></li>
+	                                        <li><a href="javascript:;">台湾/客家菜</a></li>
+	                                        <li><a href="javascript:;">创意菜</a></li>
+	                                        <li><a href="javascript:;">汤/粥/炖菜</a></li>
+	                                        <li><a href="javascript:;">蒙餐</a></li>
+	                                        <li><a href="javascript:;">新疆菜</a></li>
+	                                        <li><a href="javascript:;">其他美食</a></li>
+	                                        <li><a href="javascript:;">京菜鲁菜</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-ahome" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">酒店/客栈</a></p>
+	                                    <span><a href="javascript:;">经济型酒店</a></span>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">酒店</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a class="col" href="javascript:;">经济型酒店</a></li>
+	                                        <li><a href="javascript:;">豪华酒店</a></li>
+	                                        <li><a href="javascript:;">主题酒店</a></li>
+	                                        <li><a href="javascript:;">度假酒店/度假村</a></li>
+	                                        <li><a href="javascript:;">公寓型酒店</a></li>
+	                                        <li><a href="javascript:;">客栈</a></li>
+	                                        <li><a href="javascript:;">青年旅社</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-amovie" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">猫眼电影/在线选座</a></p>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">当前热映</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">金刚: 骷髅岛</a></li>
+	                                        <li><a href="javascript:;">美女与野兽</a></li>
+	                                        <li><a href="javascript:;">欢乐喜剧人</a></li>
+	                                        <li><a href="javascript:;">一条狗的使命</a></li>
+	                                        <li><a href="javascript:;">嫌疑人x的献身</a></li>
+	                                        <li><a href="javascript:;">金刚狼3：殊死一...</a></li>
+	                                        <li><a href="javascript:;">八月</a></li>
+	                                        <li><a href="javascript:;">绑架者</a></li>
+	                                        <li><a href="javascript:;">非凡任务</a></li>
+	                                        <li><a href="javascript:;">麦兜响当当</a></li>
+	                                    </ul>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">星美国际影城</a></li>
+	                                        <li><a href="javascript:;">中影国际影城</a></li>
+	                                        <li><a href="javascript:;">CGV影城</a></li>
+	                                        <li><a href="javascript:;">卢米埃影城</a></li>
+	                                        <li><a href="javascript:;">万达影城</a></li>
+	                                        <li><a href="javascript:;">幸福蓝海国际影城</a></li>
+	                                        <li><a href="javascript:;">K酷国际影城</a></li>
+	                                        <li><a href="javascript:;">SFC上影影城</a></li>
+	                                        <li><a href="javascript:;">耀莱成龙国际影城</a></li>
+	                                        <li><a href="javascript:;">UME国际影城</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-aktv" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">KTV</a></p>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                            </div>
+	                        </div>
+	                        <div id="m-aarder" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">休闲娱乐</a></p>
+	                                    <span><a href="javascript:;">足疗按摩</a></span>
+	                                    <span><a href="javascript:;">温泉</a></span>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">休闲娱乐</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a class="col" href="javascript:;">KTV</a></li>
+	                                        <li><a href="javascript:;">更多休闲娱乐</a></li>
+	                                        <li><a href="javascript:;">演出赛事</a></li>
+	                                        <li><a href="javascript:;">电玩/游戏厅</a></li>
+	                                        <li><a href="javascript:;">运动健身</a></li>
+	                                        <li><a href="javascript:;">私人影院</a></li>
+	                                        <li><a href="javascript:;">足疗按摩</a></li>
+	                                        <li><a href="javascript:;">洗浴/汗蒸</a></li>
+	                                        <li><a href="javascript:;">中医养生</a></li>
+	                                        <li><a href="javascript:;">茶馆</a></li>
+	                                        <li><a href="javascript:;">棋牌室</a></li>
+	                                        <li><a href="javascript:;">桌游</a></li>
+	                                        <li><a href="javascript:;">轰趴馆</a></li>
+	                                        <li><a href="javascript:;">温泉</a></li>
+	                                        <li><a href="javascript:;">DIY手工坊</a></li>
+	                                        <li><a href="javascript:;">采摘/农家乐</a></li>
+	                                    </ul>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">密室逃脱</a></li>
+	                                        <li><a href="javascript:;">酒吧</a></li>
+	                                        <li><a href="javascript:;">真人CS</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-atour" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">周边游/旅游</a></p>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">周边游</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">景点</a></li>
+	                                        <li><a href="javascript:;">温泉</a></li>
+	                                        <li><a href="javascript:;">主题公园</a></li>
+	                                        <li><a href="javascript:;">展示馆</a></li>
+	                                        <li><a href="javascript:;">农家乐</a></li>
+	                                        <li><a href="javascript:;">水上乐园</a></li>
+	                                        <li><a href="javascript:;">动植物园</a></li>
+	                                        <li><a href="javascript:;">海洋馆</a></li>
+	                                        <li><a href="javascript:;">游船</a></li>
+	                                        <li><a href="javascript:;">高空观景</a></li>
+	                                        <li><a href="javascript:;">真人CS</a></li>
+	                                        <li><a href="javascript:;">单人出租</a></li>
+	                                        <li><a href="javascript:;">漂流</a></li>
+	                                        <li><a href="javascript:;">其他游戏</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-alife" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">生活服务</a></p>
+	                                    <span><a href="javascript:;">婚纱摄影</a></span>
+	                                    <span><a href="javascript:;">个性写真</a></span>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">生活服务</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">婚纱摄影</a></li>
+	                                        <li><a href="javascript:;">个性写真</a></li>
+	                                        <li><a href="javascript:;">亲子摄影</a></li>
+	                                        <li><a href="javascript:;">其他摄影</a></li>
+	                                        <li><a href="javascript:;">培训课程</a></li>
+	                                        <li><a href="javascript:;">其他生活</a></li>
+	                                        <li><a href="javascript:;">汽车服务</a></li>
+	                                        <li><a href="javascript:;">体检/牙科</a></li>
+	                                        <li><a href="javascript:;">衣物/皮具洗护</a></li>
+	                                        <li><a href="javascript:;">鲜花</a></li>
+	                                        <li><a href="javascript:;">母婴亲子</a></li>
+	                                        <li><a href="javascript:;">配镜</a></li>
+	                                        <li><a href="javascript:;">照片冲印</a></li>
+	                                        <li><a href="javascript:;">商场购物卡</a></li>
+	                                        <li><a href="javascript:;">服饰鞋包</a></li>
+	                                        <li><a href="javascript:;">电器数码</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-abeauty" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">丽人</a></p>
+	                                    <span><a href="javascript:;">美发</a></span>
+	                                    <span><a href="javascript:;">美甲美瞳</a></span>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                                <div class="hide-box">
+	                                    <h2 class="hide-box-tit">丽人</h2>
+	                                    <ul class="hide-box-ul">
+	                                        <li><a href="javascript:;">美发</a></li>
+	                                        <li><a href="javascript:;">美容美体</a></li>
+	                                        <li><a href="javascript:;">美甲美睫</a></li>
+	                                        <li><a href="javascript:;">瑜伽舞蹈</a></li>
+	                                        <li><a href="javascript:;">瘦身纤体</a></li>
+	                                        <li><a href="javascript:;">韩式定妆</a></li>
+	                                        <li><a href="javascript:;">祛痘</a></li>
+	                                        <li><a href="javascript:;">纹身</a></li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div id="m-atoday" class="asides">
+	                            <div class="aside-z">
+	                                <div class="aside-n">
+	                                    <p><a href="javascript:;">今日新单</a></p>
+	                                </div>
+	                                <i></i>
+	                            </div>
+	                            <div class="aside-hide">
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="site-nav-r">
+	                <ul class="site-ul">
+	                    <li><a href="javascript:;">首页</a></li>
+	                    <li><a href="javascript:;">今日新单</a></li>
+	                    <li><a href="javascript:;">美食</a></li>
+	                    <li><a href="javascript:;">身边外卖</a></li>
+	                    <li><a href="javascript:;">名店抢购</a></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	<!--aside end  -->
+
+	<!-- column -->
+		<div class="column w-980">
+			<div class="column-box">
+				<div class="column-check">
+					<a class="column-checka quan" href="javascript:;">全部</a>
+					<span></span>
+					<a class="column-checka" href="javascript:;">美食 <i class=" tri"></i></a>
+					<a class="col-x" href="javascript:;"></a>
+					<span></span>
+					<a class="column-checka" href="javascript:;">分类：火锅<i class="tri"></i></a>
+					<a class="col-x" href="javascript:;"></a>
+
+				</div>
+				<div class="column-cont">
+					<div class="col-cont-1 col-cont-bot">
+						<p>区域:</p>
+						<ul class="col-ul">
+							<li><a class="current" href="javascript:;">全部</a></li>
+							
+							<li><a class="subway " href="javascript:;">地铁附近</a></li>
+							<li><a href="javascript:;">朝阳区</a></li>
+							<li><a href="javascript:;">海淀区</a></li>
+							<li><a href="javascript:;">丰台区</a></li>
+							<li><a href="javascript:;">西城区</a></li>
+							<li><a href="javascript:;">东城区</a></li>
+							<li><a href="javascript:;">昌平区</a></li>
+							<li><a href="javascript:;">石景山区</a></li>
+							<li><a href="javascript:;">通州区</a></li>
+							<li><a href="javascript:;">大兴区</a></li>
+							<li><a href="javascript:;">顺义区</a></li>
+							<li><a href="javascript:;">房山区</a></li>
+							<li><a href="javascript:;">密云区</a></li>
+							<li><a href="javascript:;">怀柔区</a></li>
+							<li><a href="javascript:;">延庆区</a></li>
+							<li><a href="javascript:;">门头区</a></li>
+							<li><a href="javascript:;">平谷区</a></li>
+						</ul>
+					</div>
+					<div class="col-cont-1">
+						<p>人数:</p>
+						<ul class="col-ul">
+							<li><a class="current" href="javascript:;">全部</a></li>
+							<li><a href="javascript:;">单人餐</a></li>
+							<li><a href="javascript:;">双人餐</a></li>
+							<li><a href="javascript:;">3-4人</a></li>
+							<li><a href="javascript:;">5-6人</a></li>
+							<li><a href="javascript:;">7-8人</a></li>
+							<li><a href="javascript:;">9-10人</a></li>
+							<li><a href="javascript:;">10以上</a></li>
+							<li><a href="javascript:;">其他</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column-bottom">
+				<ul>
+					<li class="first">默认</li>
+					<li>销量<i></i></li>
+					<li>价格<i class="col-i"></i></li>
+					<li>好评<i></i></li>
+					<li>发布时间<i></i></li>
+					<li>价格区间<i class="col-i2"></i></li>
+				</ul>
+				<a class="col-bot-a" href="javascript:;">代金券</a>
+				<a class="col-bot-a" href="javascript:;">极速退</a>
+				<a class="col-bot-a" href="javascript:;">免预约</a>
+			</div>
+		</div>
+	<!-- column end-->
+
+	<!-- content -->
+		<div class="container w-980 cf">
+			<!-- 右侧 -->
+			<div class="cont-right cf">
+				<div class="ri-list1">
+					<a href="javascript:;" class="ri-listz list01"></a>
+					<a href="javascript:;" class="ri-listz list02"></a>
+					<a href="javascript:;" class="ri-listz list03"></a>
+				</div>	
+				<div class="ri-list2">
+					<h3>猜你喜欢</h3>
+					<div></div>
+				</div>
+			</div>
+			<!-- 中部 -->
+			<div class="content cf">
+				<div class="cont">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont even">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont even">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont even">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont even">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+				<div class="cont even">
+					<a href="javascript:;" class="cont-img">
+						<img src="../static/images/list/1.jpg" width="346" height="214" >
+					</a>
+					<div class="cont-info">
+						<div class="cont-tite cf">
+							<i class="cont-icon"></i>
+							<a class="cont-titez" href="javascript:;">
+								东来顺（中关村海淀大街店）
+							</a>
+							<span class="cont-tq">
+								<a class="icons icon-tuan" href="javascript:;"></a>
+								<a class="icons icon-quan" href="javascript:;"></a>
+							</span>
+						</div>
+						<div class="cont-pj">
+							<div class="tag-list">
+								<a href="javascript:;">美食</a>
+								<a href="javascript:;">中关村</a>
+							</div>
+							<div class="rate">
+								<span class="rate-z">
+									<span></span>
+								</span>
+								<a href="javascript:;">6964人评价</a>
+							</div>
+						</div>
+					</div>
+					<div class="cont-money">
+						<span>人均¥95</span>
+						<a class="price" href="javascript:;">
+							<span>¥79</span>起
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- content end -->
+
+</body>
+
+</html>
