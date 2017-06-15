@@ -1,0 +1,873 @@
+/*===============================头部导航==================================*/
+
+header {
+    width: 1140px;
+    margin: 30px auto 25px;
+}
+
+header .biaodan {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 310px;
+    height: 33px;
+    border: 1px solid #c3c3c3;
+}
+
+header .biaodan .inp input {
+    width: 300px;
+    height: 23px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+header .biaodan .bn {
+    background: url(../images/bn_srh_1.png) no-repeat;
+    position: absolute;
+    top: 12px;
+    left: 282px;
+    width: 30px;
+    height: 30px;
+}
+
+header .biaodan .bn input {
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+#mgdb-header h1 {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+    height: 34px;
+    margin: 0 20px 0 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    background: url(../images/logo_db.png) no-repeat 0 0;
+}
+
+#mgdb-header .danghang {
+    float: right;
+    margin-top: 7px;
+}
+
+#mgdb-header .danghang li {
+    display: inline-block;
+    margin-left: 17px;
+}
+
+#mgdb-header .danghang li a {
+    width: 40px;
+    height: 20px;
+    display: inline-block;
+    background: url(../images/anony_nav_logo.png);
+    color: transparent;
+    overflow: hidden;
+    outline: none;
+}
+
+#mgdb-header .danghang .book {
+    background-position: 0 0;
+}
+
+#mgdb-header .danghang .movie {
+    background-position: -60px 0;
+}
+
+#mgdb-header .danghang .music {
+    background-position: -120px 0;
+}
+
+#mgdb-header .danghang .group {
+    background-position: -180px 0;
+}
+
+#mgdb-header .danghang .tc {
+    background-position: -240px 0;
+}
+
+#mgdb-header .danghang .fm {
+    background-position: -300px 0;
+}
+
+#mgdb-header .danghang .dx {
+    background-position: -360px 0;
+}
+
+#mgdb-header .danghang .js {
+    background-position: -420px 0;
+}
+
+
+/*===============================匿名登录==================================*/
+
+#mgdb-anony {
+    height: 180px;
+    background: url(../images/doubanapp4_bg.png) no-repeat top right #f1faf1;
+    margin-bottom: 25px;
+}
+
+#mgdb-anony .wrapper {
+    position: relative;
+    /*padding: 28px 0 4px;*/
+    overflow: hidden;
+}
+
+#mgdb-anony .anony-l {
+    height: 180px;
+}
+
+#mgdb-anony .anony-l-i {
+    width: 390px;
+    height: 180px;
+    overflow: hidden;
+    float: left;
+}
+
+#mgdb-anony .anony-l-p {
+    width: 215px;
+    height: 180px;
+    float: left;
+    padding: 28px 0 0 37px;
+}
+
+#mgdb-anony .anony-l-p h2 {
+    font-size: 25px;
+    color: #111;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+#mgdb-anony .anony-l-p p {
+    font-size: 12px;
+    color: #111;
+    letter-spacing: 1em;
+}
+
+#mgdb-anony .anony-l-p a {
+    display: inline-block;
+    font-size: 13px;
+    width: 115px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #00B51D;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 2px;
+    margin-top: 10px;
+}
+.anony-l_img{
+    display: inline-block;
+    position: relative;
+}
+
+#mgdb-anony .anony-l-p img {
+    position: relative;
+    top: 11px;
+    display: inline-block;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+#mgdb-anony .anony-l-p img:hover .img-yc {
+    display: block;
+}
+
+#mgdb-anony .anony-r {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 270px;
+    float: right;
+    margin-bottom: 15px;
+    height: 180px;
+}
+
+#mgdb-anony .anony-r form {
+    margin: 0;
+    padding-top: 20px;
+    border: 0px;
+}
+
+.password,
+.email {
+    
+    border: 1px solid #DBE5DB;
+    border-radius: 2px;
+    width: 252px;
+    padding: 0 8px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+#mgdb-anony .anony-r .ann {
+    width: 252px;
+    height: 30px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.anony-r .ann .submit {
+    padding: -1px 22px;
+    margin-right: 0;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #30A080;
+    border-color: #30A080;
+    color: #fff;
+    color: #fff;
+    width: 89px;
+    box-sizing: content-box;
+}
+
+.anony-r .ann a {
+    letter-spacing: 0;
+    float: right;
+    display: inline-block;
+    padding: 6px 19px 8px 18px;
+    vertical-align: top;
+    border-radius: 2px;
+    border: 1px solid #30A080;
+    font-size: 13px;
+    color: #30A080;
+    line-height: 1;
+    width: 89px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+.anony-r label {
+    font-size: 12px;
+    margin-top: 8px;
+    overflow: hidden;
+    color: #666;
+    margin: 2px 0 0 2px;
+}
+
+
+/*===============================热门推送==================================*/
+
+#mgdb-anony-hotpush {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+.side {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+.online ul {
+    margin-top: -4px;
+}
+
+.online li {
+    margin-top: 10px;
+    color: #999;
+}
+
+.online .title {
+    margin-bottom: 4px;
+    line-height: 1.45;
+}
+
+#mgdb-anony-hotpush .main {
+    overflow: hidden;
+}
+
+#mgdb-anony-hotpush .mod {
+    width: auto;
+    margin-bottom: 30px;
+}
+
+#mgdb-anony-hotpush .mod::after {
+    content: '\0020';
+    display: block;
+    clear: both;
+}
+
+#mgdb-anony-hotpush .albums {
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+    color: #999;
+}
+
+#mgdb-anony-hotpush .albums ul {
+    margin: -10px 0 0 -10px;
+}
+
+#mgdb-anony-hotpush .notes {
+    overflow: hidden;
+    zoom: 1;
+    color: #666;
+}
+
+#mgdb-anony-hotpush .albums li {
+    display: inline-block;
+    zoom: 1;
+    float: left;
+    width: 170px;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+}
+
+#mgdb-anony-hotpush .albums .pic {
+    display: inline-block;
+    zoom: 1;
+    width: 170px;
+    max-height: 170px;
+    overflow: hidden;
+    vertical-align: middle
+}
+
+#mgdb-anony-hotpush .albums .pic img {
+    width: 170px;
+}
+
+#mgdb-anony-hotpush .notes .first {
+    margin-top: 0;
+}
+
+#mgdb-anony-hotpush .notes li {
+    margin-top: 12px;
+}
+
+#mgdb-anony-hotpush .hostpush-tp img {
+    width: 1140px;
+}
+
+#mgdb-anony-hotpush .hside-a {
+    margin: 10px 0;
+}
+
+
+/*===============================内容部分==================================*/
+
+
+/*===============================电影==================================*/
+
+#mgdb-anony-movie a:link,
+#mgdb-anony-movie a:visited {
+    color: #27a;
+}
+
+#mgdb-anony-movie a:hover {
+    color: #fff;
+}
+
+#mgdb-anony-movie,
+#mgdb-anony-book,
+#mgdb-anony-market {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+}
+
+#mgdb-anony-movie .right-ol li {
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#mgdb-anony-movie .movie-list li {
+    display: inline-block;
+    width: 132.67px;
+    height: 230px;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+#mgdb-anony-movie .movie-list .pic img {
+    width: 100px;
+    height: 150px;
+}
+
+#mgdb-anony-movie .movie-list .pic {
+    height: 145px;
+    overflow: hidden;
+}
+
+.bn-link {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+
+#mgdb-anony-movie .bn-link:link,
+#mgdb-anony-movie .bn-link:visited {
+    background: #1c8bd0;
+    color: #fff;
+}
+
+#mgdb-anony-movie .bn-link:hover,
+#mgdb-anony-movie .bn-link:active {
+    background: #047fcb;
+}
+
+
+/*===============================小组==================================*/
+
+#mgdb-anony-group a:link,
+#mgdb-anony-group a:visited {
+    color: #017a85;
+}
+
+#mgdb-anony-group a:hover {
+    color: #fff;
+}
+
+#mgdb-anony-group,
+#mgdb-anony-music,
+#mgdb-anony-events {
+    background: #fff;
+    padding: 40px 0 20px;
+}
+
+.mgdb-anony-group {
+    width: 100%;
+    /*height: 100%;*/
+    overflow: hidden;
+    min-width: 600px;
+}
+
+
+/*--------------------------------middle------------------------------------*/
+
+.mgdb-anony-group .middle {
+    width: 100%;
+    min-width: 963px;
+    max-width: 1140px;
+    /*height: 300px;*/
+    /*background: #b3b3b3;*/
+    float: left;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+.mgdb-anony-group .middle-z {
+    margin-left: 100px;
+    margin-right: 295px;
+}
+
+#mgdb-anony-group .middle-z ul {
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+#mgdb-anony-group .middle-z ul li {
+    width: 220px;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+    overflow: hidden;
+    zoom: 1;
+    color: #999;
+    display: inline-block;
+}
+
+#mgdb-anony-group .middle-z ul li .pic {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.mgdb-anony-group .middle-z .info {
+    overflow: hidden;
+    zoom: 1;
+}
+
+
+/*---------------------------left--------------------------------------*/
+
+.mgdb-anony-group .left {
+    width: 100px;
+    /*background: #f5f5f5;*/
+    float: left;
+    margin-left: -100%;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+.mgdb-anony-group .left .section-title a {
+    font-size: 24px;
+    text-align: center;
+}
+
+.mgdb-anony-group .left li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+/*-----------------------------right------------------------------------*/
+
+.mgdb-anony-group .right {
+    width: 295px;
+    /*height: 200px;*/
+    /*background: #f5f5f5;*/
+    float: left;
+    /*padding-left: 30px;*/
+    margin-left: -295px;
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+}
+
+.mgdb-anony-group .right-ul {
+    margin-bottom: 10px;
+}
+
+.mgdb-anony-group .right-ul ul {
+    margin-left: -10px;
+}
+
+.mgdb-anony-group .right-ul .right-ul-li-f {
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #333;
+}
+
+.mgdb-anony-group .right-ul .right-ul-li-f a {
+    color: #333;
+}
+
+.mgdb-anony-group .right-ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+/*===============================读书==================================*/
+
+#mgdb-anony-book a:link,
+#mgdb-anony-book a:visited {
+    color: #614e3c;
+}
+
+#mgdb-anony-book a:hover,
+#mgdb-anony-book a:active {
+    color: #fff;
+}
+
+#mgdb-anony-book .movie-list li {
+    display: inline-block;
+    width: 132.67px;
+    height: 230px;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+#mgdb-anony-book .movie-list img {
+    width: 100px;
+}
+
+#mgdb-anony-book .movie-list .pic {
+    height: 145px;
+    overflow: hidden;
+}
+
+.bn-link {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+
+#mgdb-anony-book .bn-link:link,
+#mgdb-anony-book .bn-link:visited {
+    background: #999a95;
+    color: #fff;
+}
+
+#mgdb-anony-book .bn-link:hover,
+#mgdb-anony-book .bn-link:active {
+    background: #878882;
+    color: #fff;
+}
+
+#mgdb-anony-book .right-ul {
+    padding-top: 10px;
+    margin: -1px 0 10px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+
+/*==============================音乐=================================*/
+
+#mgdb-anony-music a:link,
+#mgdb-anony-music a:visited {
+    color: #555d53;
+}
+
+#mgdb-anony-music a:hover,
+#mgdb-anony-music a:active {
+    color: #fff;
+}
+
+#mgdb-anony-music .right-ul li {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    width: 100%;
+}
+
+#mgdb-anony-music .right-ul .num,
+#mgdb-anony-music .right-ul .pic {
+    float: left;
+    max-height: 61px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#mgdb-anony-music .right-ul .right-content {
+    overflow: hidden;
+}
+
+#mgdb-anony-music .desc {
+    margin-top: 4px;
+    color: #999;
+}
+
+#mgdb-anony-music .movie-list li {
+    display: inline-block;
+    width: 135px;
+    height: 153px;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+#mgdb-anony-music .movie-list img {
+    width: 80px;
+    overflow: hidden;
+}
+
+#mgdb-anony-music .movie-list .pic {
+    height: 80px;
+    overflow: hidden;
+}
+
+#mgdb-anony-music .title {
+    font-size: 12px;
+    color: #666;
+}
+
+#mgdb-anony-music .list li {
+    display: inline-block;
+    zoom: 1;
+    width: 133px;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+#mgdb-anony-music .list li .title {
+    color: #000;
+    font-size: 13px;
+}
+
+
+/*===============================集市==================================*/
+
+#mgdb-anony-market a .sku-title {
+    float: left;
+    font-size: 14px;
+    max-width: 78%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#mgdb-anony-market a .sku-price {
+    float: right;
+    color: #6a6a6a;
+    font-size: 13px;
+    text-align: right;
+    width: 22%;
+    white-space: nowrap;
+}
+
+.market-list-l-x a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden
+}
+
+.market-list-l {
+    float: left;
+    width: 250px;
+    margin: 10px 20px 10px 0;
+}
+
+.market-list {
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.market-list-r {
+    float: left;
+    height: 285px;
+    width: 260px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.market-list-r .market-list-r-x a {
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.market-list-r .market-list-r-s {
+    overflow: hidden;
+    margin-bottom: 0px;
+    height: 110px;
+}
+
+.market-list-r ul li {
+    float: left;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 20px;
+    height: 125px;
+    width: 110px;
+}
+
+#mgdb-anony-market .right-ul .num,
+#mgdb-anony-market .right-ul .pic {
+    float: left;
+    max-height: 61px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#mgdb-anony-market .right-ul .right-content {
+    overflow: hidden;
+}
+
+#mgdb-anony-market .desc {
+    margin-top: 4px;
+    color: #999;
+}
+
+#mgdb-anony-market .right-ul ul li {
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#mgdb-anony-market .right-ul ul li .right-content {
+    height: 64px;
+    overflow: hidden;
+    margin-top: 2px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#mgdb-anony-market .right-ul ul li .right-content .title {
+    height: 25px;
+    font-size: 13px;
+    padding-left: 75px;
+}
+
+#mgdb-anony-market .right-ul ul li .right-content .desc {
+    color: #6a6a6a;
+}
+
+
+/*===============================同城==================================*/
+#mgdb-anony-events a:link, #mgdb-anony-events a:visited {
+    color: #643;
+}
+#mgdb-anony-events a:hover, #mgdb-anony-events a:active {
+    color: #fff;
+}
+#mgdb-anony-events .middle-z li {
+    width: 248px;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+        margin: 8px 13px;
+}
+
+#mgdb-anony-events .anony-events-l {
+    float: left;
+    margin-right: 10px;
+}
+
+#mgdb-anony-events .info {
+    overflow: hidden;
+    zoom: 1;
+    color: #666;
+}
+
+#mgdb-anony-events .title {
+    line-height: 1.45;
+    font-size: 13px;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+
+
+/*===============================版权声明==================================*/
+
+footer .ft {
+    padding: 14px 0;
+    border-top: 1px dashed #dcdcdc;
+    color: #999;
+    text-align: center;
+}

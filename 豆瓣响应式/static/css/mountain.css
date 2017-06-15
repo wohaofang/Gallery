@@ -1,0 +1,218 @@
+a {
+    text-decoration: none;
+}
+
+ #pc_11{
+              
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -258px;
+                margin-top: -41px;
+
+          }
+          #pc_11 h1{
+            font-size: 51px;
+            font-weight: 400;
+          }
+
+        @media (min-width: 769px){
+            body{
+                background: url(../images/img24.jpg) no-repeat  ;
+            }
+            #pc_11{
+                display: block;
+            }
+            #mobile_11{
+                display: none;
+            }
+        }
+        @media (max-width: 768px){
+            body{
+                background: #fff;
+            }
+            #mobile_11{
+                display: block;
+            }
+            #pc_11{
+                display: none;
+            }
+        }
+/*==========================内容========================*/
+
+
+/*=====================主题=================*/
+
+article {
+    width: 100%;
+    padding-top: 80px;
+    /*padding: 80px 20px;*/
+    /*margin: 0 42.5px;*/
+}
+
+article #theme {
+    background: url(../images/file-1487314290.jpg) no-repeat center/cover;
+    /*background:*/
+    ;
+    box-sizing: border-box;
+    min-height: 205px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*article #theme img{
+	width: 100%;
+}*/
+
+article #theme .theme-word {
+    color: #fff;
+}
+
+article #theme .theme-word h2 {
+    font-weight: 500;
+    /*margin: 10px 0;*/
+    padding: 10px 0;
+}
+
+article #theme .theme-word p {
+    padding: 5px 0;
+}
+
+
+/*========================登录评论=======================*/
+#content{
+	padding: 0 14px;
+}
+
+/*=============登录=================*/
+
+.entry {
+    /*padding: 0 14px;*/
+    display: flex;
+    justify-content: space-between;
+    line-height: 63px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.entry-l img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.entry-l span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 9px;
+    color: #a89f9f;
+    /*line-height: 40px;*/
+}
+
+.entry-r .entry-write {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/ic_status_pen.svg);
+}
+
+.entry-r .entry-camera {
+    margin-left: 15px;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url(../images/ic_status_camera.svg);
+}
+
+/*=================评论==============*/
+.comment{
+	width: 100%;
+}
+.comment h2{
+   margin-top: 24px;
+       margin-bottom: 17px;
+   color: #aaa;
+   /* margin: 0 0 15px;*/
+    font-size: 15px;
+    font-weight: 400;
+}
+.comment-1{
+	display: flex;
+
+}
+.comment-1 .comment-r{
+	width: 100%;
+}
+.comment-1 .comment-r p{
+	font-size: 17px;
+	line-height: 1;
+	color: #494949;
+	margin-bottom: 7px;
+}
+.comment-1 .comment-r span{
+	font-size: 14px;
+	line-height: 1;
+	color: #aaa;
+}
+.comment-1 .comment-r .comment-c{
+	margin-top: 10px;
+		font-size: 17px;
+		line-height: 22px;
+		color: #494949;
+}
+.comment-1 .comment-r .comment-img{
+	width: 100%;
+	max-height: 300px;
+	overflow: hidden;
+}
+.img11{
+	border-radius: 50%;
+}
+.comment-1 .comment-r .comment-img img{
+	width: 100%;
+}
+.commnet-zan{
+	display: flex;
+	justify-content: space-between;
+	margin: 18px 7px;
+    border-bottom: 1px solid #f3f3f3;
+        padding-bottom: 5px;
+}
+
+.commnet-zan .commnet-zan-l p{
+	display: inline-block;
+	color: #ccc;
+	margin-left: 3px;
+	margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.itemss{
+	
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+.commnet-zan-z{
+	background: url(../images/ic_like_gray.svg) no-repeat center center;
+}
+.commnet-zan-p{
+	background: url(../images/ic_comment.svg) no-repeat center center;
+}
+.commnet-zan-s{
+	background: url(../images/ic_retweet_gray.svg) no-repeat center center;
+}
+.commnet-zan-d{
+	background: url(../images/more.svg) no-repeat center center;
+}
+

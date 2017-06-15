@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 15px;
+}
+
+  @media only screen and (min-width: 769px) {
+        #mg-mobile {
+            display: none;
+        }
+        #mg-pc {
+            display: block;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        #mg-mobile {
+            display: block;
+        }
+        #mg-pc {
+            display: none;
+        }
+    }
+
+@media only screen and (min-width: 530px) {
+    #mobile-movies li {
+        width: 22.8%;
+    }
+    
+}
+@media only screen and  (max-width: 529px) {
+     #mobile-movies li {
+        width: 30.8%;
+    }
+    
+}
+
+
+/*======================头部=======================*/
+#mgdb-mobile-header .header-a:hover,#mgdb-mobile-header .header-a:visited{
+    background: #fff;
+}
+
+#mgdb-mobile-header {
+    min-width: 370px;
+        padding: 10px 0 10px 0;
+    height: 47px;
+    width: 100%;
+    line-height: 47px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f3f3;
+    position: fixed;
+    background: #fff;
+    margin: 0;
+}
+
+#mgdb-mobile-header a {
+    margin-left: 23px;
+}
+#mgdb-mobile-header .aaa:hover{
+    background: #fff;
+}
+
+#mgdb-mobile-header a p {
+    height: 22px;
+    width: 46px;
+    margin-top: 14px;
+    background: url(../images/mobile-logo.png) no-repeat;
+    background-size: cover
+}
+
+#mgdb-mobile-header ul {
+    margin-right: 23px;
+}
+
+#mgdb-mobile-header ul li {
+    display: inline-block;
+}
+
+#mgdb-mobile-header .mobile-sousuo {
+    display: block;
+    height: 15px;
+    width: 25px;
+    margin-top: 14px;
+    background: url(../images/mobile-sousuo.png) no-repeat;
+    background-size: cover
+}
+
+
+/*=======================导航======================*/
+
+#mgdb-mobile-nav {
+    max-width: 650px;
+    background: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    /*margin-top: 20px;*/
+    padding-top: 76px;
+    overflow: hidden;
+}
+
+#mgdb-mobile-nav ul li {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    /*要设置宽度为50% 就必须用怪异盒模型*/
+    padding: 4px;
+    font-size: 15px;
+}
+
+#mgdb-mobile-nav ul li a {
+    background-color: #f6f6f6;
+    color: #494949;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    padding: 12px 0;
+    border-radius: 2px;
+    max-width: 100%
+}
+
+
+/*=====================内容======================*/
+
+#mgdb-mobile-content {
+    max-width: 650px;
+    background: #fff;
+    margin: 0 auto;
+    overflow-x: hidden;
+    margin-top: 20px;
+    padding-top: 6px;
+    overflow: hidden;
+}
+
+#mgdb-mobile-content .mobile-content {
+    /*min-width: 350px;*/
+    display: block;
+    padding: 25px 18px 9px 18px;
+    color: #494949;
+}
+
+.photos{
+    display: flex;
+    margin-bottom: 10px;
+}
+.photos .main{
+    flex:3;
+    margin-right: 4px;
+}
+.photos .main img{
+    width: 100%;
+}
+.photos .aside{
+    display: flex;
+    flex:1;
+        flex-direction: column;
+}
+/*.photos .aside .aside-pic{
+    margin-bottom: 5px;
+}*/
+.photos .aside img{
+    width: 100%;
+}
+
+
+
+
+#mgdb-mobile-content .mobile-content:hover{
+    background: #fff;
+}
+
+#mgdb-mobile-content .mobile-content-s {
+    margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+#mgdb-mobile-content .mobile-content-z {
+    flex-basis: 70%;
+}
+
+#mgdb-mobile-content .mobile-content-y {
+    /*background: url(../img/file-1487926250.jpg) center center no-repeat;
+	background-size: cover;*/
+    width:25.6%;
+    /*height: 100%;*/
+    /*flex-basis:  25.6%;*/
+    float: right;
+    margin-left: 25px;
+        max-width: 150px;
+        min-width: 65px;
+}
+#mgdb-mobile-content .mobile-content-y img{
+    width: 100%;
+}
+
+#mgdb-mobile-content .mobile-content-z h3 {
+    font-family: fantasy;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.41;
+    color: #494949;
+    margin-bottom: 26px;
+}
+
+#mgdb-mobile-content .mobile-content-z p {
+    text-align: justify;
+    color: #827b7b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.mobile-content-x {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #827b7b;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+
+
+
+/*====================影院热映======================*/
+#mobile-movies{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 76px;
+    
+    margin: 0 auto;
+    min-width: 350px;
+}
+#mobile-movies h1{
+    font-size: 24px;
+    font-weight: normal;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    padding-left: 4%
+}
+#mobile-movies li {
+    display: inline-block;
+
+    /*width: 22.8%;*/
+    margin-top: 23px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+
+
+    }
+.allstar30{
+    background-position: 0 -44px;
+    display: inline-block;
+    background: url(../images/ic_rating_s.png) no-repeat;
+     width: 55px;
+    height: 11px;
+    margin: 0 3px 0 0;
+    overflow: hidden;
+}
+.rating i {
+    margin-left: 4px;
+    color: #e09015;
+}

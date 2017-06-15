@@ -1,0 +1,195 @@
+/*==============公用样式=================*/
+
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+input,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Microsoft YaHei", Arial;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*==============开始=================*/
+
+.cantainer {
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/one/bg.png) no-repeat;
+    background-size: 100%;
+}
+
+.banner {
+    /*position: absolute;*/
+    /*top: 4%;*/
+    width: 98vw;
+    /*height: 50vh;*/
+    margin: 0 auto;
+    -webkit-animation: banner 10s linear infinite;
+    animation: banner 10s linear infinite;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+@-webkit-keyframes banner {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes banner {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 14%;
+    width: 90vw;
+    /*margin: 0 auto;*/
+    /*padding-left: 4vw;*/
+}
+
+.title .biaot {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    margin: 0 auto;
+    margin-bottom: 1.5vh;
+    /*padding-left: 11vw;*/
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.txet {
+    width: 67.7vw;
+    height: 2.75vh;
+    margin: 0.8vh auto 5vh;
+}
+
+.txet img {
+    width: 100%;
+    height: 100%;
+}
+
+.consultation {
+    width: 52.99vw;
+    height: 6.37vh;
+    margin: 0 auto;
+}
+
+.consultation img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 6.2vh;
+    background: url(../img/one/btn.png) no-repeat;
+    background-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.btn a img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-aa {
+    margin-top: 10px;
+    display: block;
+    width: 29.47vw;
+    height: 2.91vh;
+}
+
+.btn-bb {
+    margin-top: 10px;
+    display: block;
+    width: 29.86vw;
+    height: 2.76vh;
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 15px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+   #pc_11{
+              
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -258px;
+                margin-top: -41px;
+
+          }
+          #pc_11 h1{
+            font-size: 51px;
+            font-weight: 400;
+          }
+
+        @media (min-width: 769px){
+            body{
+                background: url(../images/img24.jpg) no-repeat  ;
+            }
+            #pc_11{
+                display: block;
+            }
+            #mobile_11{
+                display: none;
+            }
+        }
+        @media (max-width: 768px){
+            body{
+                background: #fff;
+            }
+            #mobile_11{
+                display: block;
+            }
+            #pc_11{
+                display: none;
+            }
+        }
+
+/*==========================头部============================*/
+
+
+
+#mgdb-mobile-header {
+    min-width: 370px;
+        padding: 10px 0 10px 0;
+    height: 47px;
+    width: 100%;
+    /*line-height: 47px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    border-bottom: 1px solid #f3f3f3;
+    position: fixed;
+    background: #fff;
+    margin: 0;
+}
+
+#mgdb-mobile-header .mobile-close{
+    position: absolute;
+    font-size: 18px;
+    color: #42bd56;
+    top: 23px;
+    left: 18px;
+}
+
+#mgdb-mobile-header .mobile-search{
+    padding: 9px 37px 15px 70px;
+
+}   
+#mgdb-mobile-header .mobile-search input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    /*background:#c7c7c7;*/
+    border-radius: 7px;
+    background: url(../images/4.png) no-repeat 50% #c7c7c7;
+    background-size: 23px;
+}
+/*===============内容=====================*/
+article{
+  /*  padding-top: 50px;*/
+  padding: 105px  40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f3f3;
+}
+article a{
+    text-align: center;
+    display: block;
+    display: block;
+    margin-bottom:27px;
+
+}
+article a strong{
+    font-size: 27px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+article a span{
+    display: block;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/*================底部====================*/
+
+footer .footer-nav{
+    display: inline-block;
+    width: 100%;
+   /* margin-bottom: 10px;*/
+       padding: 12px;
+    border-bottom: 1px solid #f3f3f3;
+    color: #42bd56;
+    font-size: 16px;
+
+}
+footer .footer-nav .footer-l{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-right: 1px solid #f3f3f3;
+}
+footer .footer-nav .footer-r{
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+}

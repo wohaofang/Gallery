@@ -1,0 +1,2133 @@
+/*=========================================================
+mgxf-header start==============================================*/
+
+#mg-header {
+    width: 100%;
+    height: 116px;
+    background: #000;
+}
+
+#mg-header .bottom {
+    border-bottom: 1px solid #92be2c;
+    overflow: hidden;
+}
+
+#mg-header .header-l {
+    width: 480px;
+    height: 115px;
+    background: #000;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#mg-header .header-logo {
+    width: 115px;
+    height: 40px;
+    float: left;
+    margin-left: 55px;
+    margin-top: 37px;
+}
+
+#mg-header .header-logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#mg-header .header-logo a img {
+    width: 100%;
+    height: 100%;
+}
+
+#mg-header .header-id {
+    font-size: 20px;
+    padding-left: 3px;
+    height: 37px;
+    float: left;
+    margin-top: 37px;
+    color: #fff;
+    border-left: 3px solid #fff;
+    letter-spacing: 3px;
+    line-height: 34px;
+}
+
+#mg-header .header-r {
+    display: inline-block;
+    /*line-height: 115px;*/
+    margin: 47px 0 0 14px;
+    position: relative;
+}
+
+#mg-header .header-r ul li {
+    display: inline-block;
+    padding: 0 0 0 23px;
+    font-size: 15px;
+}
+
+#mg-header .header-r ul li a {
+    color: #92be2c;
+}
+
+#mg-header .header-r .ljzx {
+    position: absolute;
+    top: -8px;
+    right: -112px;
+    width: 100px;
+    height: 30px;
+}
+
+
+/*=========================================================
+mgxf-header end==============================================*/
+
+
+/*=========================================================
+mgxf-banner start==============================================*/
+
+#mg-banner {
+    width: 100%;
+    height: 520px;
+    background: -webkit-linear-gradient(top, #1b1b1b, #363636);
+    background: -moz-linear-gradient(top, #1b1b1b, #363636);
+    background: linear-gradient(top, #1b1b1b, #363636);
+}
+
+#mg-banner .ban {
+    position: relative;
+    height: 100%;
+    width: 960px;
+}
+
+#mg-banner .banner-font {
+    width: 750px;
+    height: 335px;
+    padding: 80px 0 0 60px
+}
+
+#mg-banner .banner-font .p1 {
+    font-size: 25px;
+    color: #92be2c;
+}
+
+#mg-banner .banner-font .p1 span {
+    display: inline-block;
+    border-top: 2px solid #92be2c;
+}
+
+#mg-banner .banner-font h2 {
+    font-size: 42px;
+    /*color: #ffffff;*/
+    background: -webkit-linear-gradient(left, #a0a0a0, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#mg-banner .banner-font .p2 {
+    font-size: 25px;
+    color: #f6f6f6;
+    margin-top: 16px;
+}
+
+#mg-banner .bttn {
+    width: 160px;
+    font-size: 21px;
+    color: #fff;
+    height: 45px;
+    margin-top: 70px;
+    background: #ccc;
+}
+
+#mg-banner .superman {
+    width: 590px;
+    height: 460px;
+    position: absolute;
+    bottom: 0px;
+    right: -168px;
+}
+
+#mg-banner .superman img {
+    width: 95%;
+    height: 95%;
+    margin-top: 25px;
+}
+
+
+/*=========================================================
+mgxf-banner end==============================================*/
+
+
+/*=========================================================
+mgxf-button start==============================================*/
+
+#mg-button {
+    height: 130px;
+    width: 100%;
+    background: #292828;
+}
+
+#mg-button .bt {
+    width: 960px;
+    height: 133px;
+    /*background: #ccc;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mg-button ul li {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 0 30px;
+    position: relative;
+    transform: rotate(0);
+    transition: transform ease .06;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
+}
+
+#mg-button ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#mg-button .btn-li1 {
+    background: #92be2c;
+}
+
+#mg-button .btn-li2 {
+    background: #05a0e6;
+}
+
+#mg-button .btn-li3 {
+    background: #e62f22;
+}
+
+#mg-button ul li i {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    /*background: #ccc*/
+}
+
+#mg-button .btn-html {
+    background: url(../images/common/Sprites.png);
+    background-position: -7px -4px;
+    background-size: 519px;
+}
+
+#mg-button .btn-css {
+    background: url(../images/common/Sprites.png);
+    background-position: -7px -60px;
+    background-size: 519px;
+}
+
+#mg-button .btn-js {
+    background: url(../images/common/Sprites.png);
+    background-position: -7px -108px;
+    background-size: 519px;
+}
+
+#mg-button .btn-li1:hover,
+#mg-button .btn-li2:hover,
+#mg-button .btn-li3:hover {
+    transform: rotateY(180deg);
+    transition: transform ease .6;
+}
+
+
+/*=========================================================
+mgxf-button end==============================================*/
+
+
+/*=========================================================
+mgxf-salary start==============================================*/
+
+#mg-salary {
+    background-color: #000;
+    height: 610px;
+    background-image: url(../images/common/Spark.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 630px 610px;
+}
+
+#mg-salary .mg-salary-content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 610px;
+}
+
+#mg-salary .mg-salary-content .content-left {
+    width: 420px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mg-salary .mg-salary-content .content-left img {
+    width: 420px;
+}
+
+#mg-salary .mg-salary-content .content-left p {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    color: #f6f6f6;
+}
+
+#mg-salary .mg-salary-content .content-right {
+    width: 465px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+#mg-salary .mg-salary-content .content-right .right-top {
+    height: 95px;
+}
+
+#mg-salary .mg-salary-content .content-right .right-top p:nth-child(1) {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: #92be2c;
+    font-size: 25px;
+}
+
+#mg-salary .mg-salary-content .content-right .right-top p span {
+    display: inline-block;
+    border-top: 1px solid #92be2c;
+}
+
+#mg-salary .mg-salary-content .content-right .right-top p:nth-child(2) {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    color: #a0a0a0;
+    font-size: 50px;
+}
+
+#mg-salary .mg-salary-content .content-right .right-bottom .right-intro p {
+    font-size: 17px;
+    color: #f6f6f6;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+}
+
+#mg-salary .mg-salary-content .content-right .right-bottom .right-button {
+    width: 160px;
+    height: 45px;
+    background-color: #fffca2;
+    margin-top: 20px;
+}
+
+#mg-salary .mg-salary-content .content-slide {
+    width: 65px;
+    height: 487px;
+    background-size: 915px;
+    background-image: url(../images/common/Sprites.png);
+    background-position: -692px 93px;
+    position: relative;
+    top: 50px;
+}
+
+
+/*=========================================================
+mgxf-salary end==============================================*/
+
+
+/*=========================================================
+mgxf-advantage start ==============================================*/
+
+#mg-advantage {
+    width: 100%;
+    background-color: #252525;
+}
+
+#mg-advantage .w-960 {
+    overflow: hidden;
+    padding: 50px 0 63px;
+}
+
+#mg-advantage .click-wrapper {
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+#mg-advantage .click-wrapper .pic {
+    margin-left: 18px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #92be2c;
+}
+
+#mg-advantage .click-wrapper p {
+    padding-top: 10px;
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+}
+
+#mg-advantage .line {
+    position: relative;
+    height: 1px;
+    background-color: #6AA300;
+    border: 1px solid #6AA300;
+}
+
+#mg-advantage .line .line-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 95px;
+    height: 5px;
+    margin-left: -47px;
+    margin-top: -3px;
+    background-color: #6AA300;
+    border: 1px solid #6AA300;
+}
+
+#mg-advantage .content {
+    width: 840px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#mg-advantage .content .item.first {
+    position: relative;
+    text-align: left;
+}
+
+#mg-advantage .content .item.first .pic {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    width: 140px;
+    height: 220px;
+}
+
+#mg-advantage .content .item.first .pic img {
+    width: 100%;
+}
+
+#mg-advantage .content .item {
+    float: left;
+    width: 410px;
+    height: 275px;
+    margin: 5px;
+    padding: 14px;
+    text-align: center;
+    background-color: #7DA226;
+}
+
+#mg-advantage .content .item.first h3 {
+    margin-bottom: 0;
+    padding-top: 16px;
+}
+
+#mg-advantage .content .item h3 {
+    margin-bottom: 10px;
+}
+
+#mg-advantage .content .item .title-line {
+    width: 46px;
+    height: 1px;
+    margin: 5px auto 10px;
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+#mg-advantage .content .item:nth-child(1) {
+    background-color: #252525;
+}
+
+#mg-advantage .content .item:nth-child(4) {
+    position: relative;
+    background-color: #000;
+}
+
+#mg-advantage .content .item:nth-child(4) p {
+    margin-top: 100px;
+}
+
+#mg-advantage .content .item:nth-child(4)::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 200px;
+    border: 10px solid transparent;
+    box-shadow: 95px 119px 163px 10px #fff;
+    border-radius: 50%;
+}
+
+#mg-advantage .content .item .click-for-more {
+    position: relative;
+    width: 100px;
+    height: 32px;
+    margin: 25px auto 0;
+    background-color: #8B0000;
+}
+
+#mg-advantage .content .item .click-for-more::after {
+    content: "+";
+    position: absolute;
+    color: #fff;
+    top: -24px;
+    left: 45%;
+}
+
+#mg-advantage .content .item.can-do-wt ul {
+    vertical-align: middle;
+    margin-top: 20px;
+}
+
+#mg-advantage .content .item.can-do-wt ul li {
+    display: inline-block;
+    margin-right: -5px;
+}
+
+#mg-advantage .content .item.can-do-wt ul .apple {
+    width: 51px;
+    height: 58px;
+    background: url(../images/common/Sprites.png) no-repeat -111px 0;
+    background-size: 480px;
+}
+
+#mg-advantage .content .item.can-do-wt ul .chrome {
+    width: 46px;
+    height: 49px;
+    background: url(../images/common/Sprites.png) no-repeat -110px -57px;
+    background-size: 480px;
+}
+
+#mg-advantage .content .item.can-do-wt ul .handle {
+    width: 58px;
+    height: 31px;
+    margin-bottom: 10px;
+    background: url(../images/common/Sprites.png) no-repeat -96px -107px;
+    background-size: 480px;
+}
+
+#mg-advantage .content .item.can-do-wt ul .wechat {
+    width: 78px;
+    height: 50px;
+    background: url(../images/common/Sprites.png) no-repeat -91px -143px;
+    background-size: 480px;
+}
+
+#mg-advantage .content .item.can-do-wt ul .pc {
+    width: 60px;
+    height: 51px;
+    background: url(../images/common/Sprites.png) no-repeat -103px -191px;
+    background-size: 480px;
+}
+
+#mg-advantage .content .item.can-do-wt ul .set {
+    width: 63px;
+    height: 53px;
+    background: url(../images/common/Sprites.png) no-repeat -103px -240px;
+    background-size: 480px;
+}
+
+
+/*=========================================================
+mgxf-advantage end==============================================*/
+
+
+/*=========================================================
+mgxf-achievement start==============================================*/
+
+#mg-achievement {
+    width: 100%;
+    background-color: #000;
+    padding-bottom: 70px;
+}
+
+#mg-achievement .w-960 {
+    position: relative;
+    padding-top: 55px;
+}
+
+#mg-achievement .side-bar {
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 475px;
+    margin-top: -237.5px;
+    background: url(../images/common/side-left-bar.png) no-repeat;
+    background-size: 25px 475px;
+}
+
+#mg-achievement .side-bar:nth-child {
+    left: -12px;
+}
+
+#mg-achievement .content {
+    width: 840px;
+    margin: 37px auto 0;
+}
+
+#mg-achievement .content .title-line {
+    width: 46px;
+    height: 1px;
+    background: #8bb527;
+    border: 1px solid #8bb527;
+}
+
+#mg-achievement .content h3 {
+    color: #92be2c;
+    font-size: 25px;
+}
+
+#mg-achievement .content .instruction {
+    color: #f6f6f6;
+}
+
+
+/*====================================================================
+achievement salary table==============================================*/
+
+#mg-achievement .content .table-head {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+#mg-achievement .content .table-head .name,
+#mg-achievement .content .table-head .sex,
+#mg-achievement .content .table-head .education,
+#mg-achievement .content .table-head .salary,
+#mg-achievement .content .table-head .welfare {
+    float: left;
+    width: 87px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border: 1px solid #bee026;
+}
+
+#mg-achievement .content .table-head .school {
+    float: left;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border: 1px solid #bee026;
+}
+
+#mg-achievement .content .table-head .company {
+    float: left;
+    width: 230px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    border: 1px solid #bee026;
+}
+
+#mg-achievement .content .table-head div:nth-child(1),
+#mg-achievement .content .table-head div:nth-child(3),
+#mg-achievement .content .table-head div:nth-child(5),
+#mg-achievement .content .table-head div:nth-child(7) {
+    background: #205400;
+}
+
+#mg-achievement .content .table-head div:nth-child(2),
+#mg-achievement .content .table-head div:nth-child(4),
+#mg-achievement .content .table-head div:nth-child(6) {
+    background: #022c00;
+}
+
+#mg-achievement .content .salary-data {
+    position: relative;
+    width: 820px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#mg-achievement .salary-data table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#mg-achievement .content .salary-data table tr,
+#mg-achievement .content .salary-data table td {
+    height: 30px;
+    text-align: center;
+    background-color: #171717;
+    border: 1px solid #000;
+}
+
+#mg-achievement .salary-data .name,
+#mg-achievement .salary-data .sex,
+#mg-achievement .salary-data .education,
+#mg-achievement .salary-data .salary,
+#mg-achievement .salary-data .welfare {
+    margin-right: 1px;
+    width: 87px;
+}
+
+#mg-achievement .salary-data .school {
+    margin-right: 1px;
+    width: 150px;
+}
+
+#mg-achievement .salary-data .company {
+    margin-right: 1px;
+    width: 230px;
+}
+
+#mg-achievement .content .salary-data .light {
+    background-color: #232323;
+}
+
+#mg-achievement .content .mor-data {
+    width: 160px;
+    height: 49px;
+    margin: 30px auto 0;
+    background-color: #8bb527;
+}
+
+
+/*=========================================================
+mgxf-achievement end==============================================*/
+
+
+/*=========================================================
+mgxf-promise start==============================================*/
+
+#mg-promise {
+    width: 100%;
+    height: 500px;
+    background-color: #141414;
+}
+
+#mg-promise .wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#mg-promise .wrapper .both-sides {
+    width: 25px;
+    height: 314px;
+    background-size: 700px;
+    background-image: url(../images/common/Sprites.png);
+    background-position: -546px 57px;
+    position: absolute;
+    top: 20px;
+}
+
+#mg-promise .wrapper .both-sides:nth-child(1) {
+    left: -12px;
+}
+
+#mg-promise .wrapper .both-sides:nth-child(2) {
+    left: 948px;
+}
+
+#mg-promise .wrapper p {
+    text-align: center;
+}
+
+#mg-promise .wrapper .promise-title {
+    color: #fff;
+    padding-top: 50px;
+}
+
+#mg-promise .wrapper .promise-dimension {
+    color: #fff;
+    padding-top: 15px;
+}
+
+#mg-promise .promise-content {
+    width: 610px;
+    margin: 0 auto;
+    padding-top: 35px;
+    overflow: hidden;
+}
+
+#mg-promise .promise-content>div {
+    width: 120px;
+    height: 150px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+#mg-promise .promise-content>div>p {
+    position: absolute;
+    width: 120px;
+    margin: 0 auto;
+}
+
+#mg-promise .promise-content img {
+    animation: circle 4s infinite linear;
+    -webkit-animation: circle 4s infinite linear;
+    -moz-animation: circle 4s infinite linear;
+    -o-animation: circle 4s infinite linear;
+    /*匀速 循环*/
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-moz-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-o-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#mg-promise .promise-content .margin-l {
+    margin-left: 125px;
+}
+
+#mg-promise .promise-content .font21 {
+    color: #92bd2c;
+    top: 40px;
+}
+
+#mg-promise .promise-content .font12 {
+    color: #fff;
+    top: 120px;
+}
+
+#mg-promise .mart {
+    margin: 43px auto 0;
+}
+
+
+/*=========================================================
+mgxf-promise end==============================================*/
+
+
+/*=========================================================
+mgxf-special start==============================================*/
+
+#mg-special {
+    width: 100%;
+    height: 700px;
+    background-color: #252525;
+}
+
+#mg-special .wrapper {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#mg-special .line {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #DB0A1F;
+}
+
+#mg-special .middle-line {
+    height: 100%;
+    width: 95px;
+    border-bottom: 5px solid #DB0A1F;
+    margin: 0 auto;
+    position: relative;
+    top: 3px;
+}
+
+#mg-special .font34,
+#mg-special .font17 {
+    color: #fff;
+    text-align: center;
+}
+
+#mg-special .title-up {
+    padding-top: 20px;
+}
+
+#mg-special .title-down {
+    padding-top: 8px;
+}
+
+#mg-special .promise-brand:hover,
+.promise-education:hover,
+.promise-course:hover,
+.promise-item:hover,
+.promise-teachers:hover,
+.promise-teaching:hover,
+.promise-job:hover,
+.promise-ensure:hover {
+    box-shadow: inset 0 0 15px 4px #000;
+}
+
+#mg-special .promise-brand:hover .promise-hover,
+.promise-education:hover .promise-hover,
+.promise-course:hover .promise-hover,
+.promise-item:hover .promise-hover,
+.promise-teachers:hover .promise-hover,
+.promise-teaching:hover .promise-hover,
+.promise-job:hover .promise-hover,
+.promise-ensure:hover .promise-hover {
+    transform: scale(0.9);
+}
+
+#mg-special .special-content {
+    width: 821px;
+    height: 350px;
+    margin: 35px auto 0;
+    text-align: center;
+}
+
+#mg-special .promise-brand,
+.promise-education,
+.promise-course,
+.promise-item,
+.promise-teachers,
+.promise-teaching,
+.promise-job,
+.promise-ensure {
+    width: 200px;
+    height: 170px;
+    float: left;
+}
+
+#mg-special .promise-brand,
+.promise-course,
+.promise-teaching,
+.promise-ensure {
+    background-color: #C2081C;
+}
+
+#mg-special .promise-education,
+.promise-item,
+.promise-teachers,
+.promise-job {
+    background-color: #181818;
+}
+
+#mg-special .promise-education,
+.promise-course,
+.promise-item,
+.promise-teaching,
+.promise-job,
+.promise-ensure {
+    margin-left: 7px;
+}
+
+#mg-special .promise-teachers,
+.promise-teaching,
+.promise-job,
+.promise-ensure {
+    margin-top: 7px;
+}
+
+#mg-special .background-shadow {
+    width: 1px;
+    height: 1px;
+    background-color: #fff;
+    position: relative;
+    top: 95px;
+    left: 99px;
+    box-shadow: 0 0 138px 24px #fff;
+}
+
+#mg-special .top-line {
+    width: 32px;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    top: 29px;
+    left: 84px;
+}
+
+#mg-special .name,
+.intro {
+    color: #fff;
+}
+
+#mg-special .name {
+    padding-top: 29px;
+}
+
+#mg-special .intro {
+    padding-top: 9px;
+}
+
+#mg-special .click {
+    width: 65px;
+    height: 65px;
+    background-color: #C2081C;
+    border-radius: 50%;
+    margin: 20px auto 0;
+}
+
+#mg-special .bottom-title {
+    text-align: center;
+    padding: 10px;
+}
+
+#mg-special .bottom-title p {
+    color: #fff;
+}
+
+
+/*=========================================================
+mgxf-special end==============================================*/
+
+
+/*=========================================================
+mgxf-teacher start==============================================*/
+
+#mg-teacher {
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    overflow-x: hidden;
+    padding: 10px 0;
+}
+
+#mg-teacher .teacher-container {
+    position: relative;
+    border-top: 1px solid #3a5c9c;
+    background: #252525;
+    padding: 50px 0;
+}
+
+#mg-teacher .teacher-bold-line {
+    position: absolute;
+    width: 95px;
+    height: 5px;
+    background: #3a5c9c;
+    top: -3px;
+    animation: mythird 4s linear .01s infinite alternate;
+    /* Firefox: */
+    -moz-animation: mythird 4s linear .01s infinite alternate;
+    /* Safari and Chrome: */
+    -webkit-animation: mythird 4s linear .01s infinite alternate;
+    /* Opera: */
+    -o-animation: mythird 4s linear .01s infinite alternate;
+}
+
+@keyframes mythird {
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+@-moz-keyframes mythird
+/* Firefox */
+
+{
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+@-webkit-keyframes mythird
+/* Safari and Chrome */
+
+{
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+@-o-keyframes mythird
+/* Opera */
+
+{
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+#mg-teacher .teacher-content {
+    width: 840px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #252525;
+    padding-top: 40px;
+}
+
+#mg-teacher .teacher-content li {
+    list-style: none;
+    float: left;
+    width: 410px;
+    height: 275px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    /*background: #3a5c9c;*/
+}
+
+
+/*这里不加important无法覆盖 为啥呢*/
+
+#mg-teacher .teacher-blackbackground {
+    background: #000 !important;
+}
+
+#mg-teacher .teacher-blackbackground::after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    border: 20px solid transparent;
+    border-radius: 50%;
+    box-shadow: 75px 110px 224px #fff;
+}
+
+#mg-teacher .teacher-content .teacher-content-item {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    background: #3a5c9c;
+}
+
+#mg-teacher .teacher-content .teacher-content-item::before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 117px;
+    top: 48px;
+}
+
+#mg-teacher .teacher-content-item p {
+    font-size: 12px;
+}
+
+#mg-teacher .teacher-content-title {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#mg-teacher .teacher-content-title-content {
+    position: absolute;
+    top: 40px;
+    left: 118px;
+}
+
+#mg-teacher .teacher-content-dialog {
+    position: absolute;
+    left: 95px;
+    top: -27px;
+}
+
+#mg-teacher .teacher-content-dialog img {
+    width: 140px;
+    height: 220px;
+}
+
+#mg-teacher .teacher-pic {
+    width: 100px;
+    height: 120px;
+    background-image: url("../images/teacher/teacher.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+#mg-teacher .introdu-title {
+    position: absolute;
+    left: 116px;
+    top: 55px;
+}
+
+#mg-teacher .introdu-experience {
+    width: 280px;
+    /*height: 70px;*/
+    position: absolute;
+    top: 153px;
+    left: 114px;
+    overflow: hidden;
+}
+
+#mg-teacher .introdu-content {
+    float: left;
+}
+
+#mg-teacher .introdu-logo {
+    float: right;
+    background-image: url(../images/common/Sprites.png);
+    width: 92px;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-size: 510px;
+}
+
+
+/*雪碧图的轮转 /(ㄒoㄒ)/~~ */
+
+.pic0 {
+    background-position: 0 0;
+    height: 70px;
+}
+
+.logo0 {
+    background-position: -180px 0;
+    height: 92px;
+}
+
+.pic1 {
+    background-position: 0 -143px;
+}
+
+.logo1 {
+    background-position: -180px -90px;
+    height: 70px;
+}
+
+.pic2 {
+    background-position: 0 -285px;
+}
+
+.logo2 {
+    background-position: -180px -157px;
+    height: 70px;
+}
+
+.pic3 {
+    background-position: 0 -427px;
+}
+
+.logo3 {
+    background-position: -186px -225px;
+    height: 90px;
+}
+
+.pic4 {
+    background-position: 0 -569px;
+}
+
+.logo4 {
+    background-position: -186px -315px;
+    height: 90px;
+}
+
+#mg-teacher .teacher-footer {
+    width: 80%;
+    height: 130px;
+    background: #252525;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#mg-teacher .teacher-footer-content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#mg-teacher .teacher-btn {
+    width: 65px;
+    height: 65px;
+    margin: 10px auto;
+    border-radius: 50%;
+    background: #426ab6;
+}
+
+
+/*=========================================================
+mgxf-teacher end==============================================*/
+
+
+/*=========================================================
+mgxf-program start==============================================*/
+
+#mg-program .mg-program-container {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url("../images/common/Spark.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 40px 0;
+}
+
+#mg-program .program-wrapper {
+    width: 80%;
+    padding: 30px 0;
+}
+
+#mg-program .swiper-container {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+}
+
+#mg-program .program-swiper-button-next {
+    width: 30px;
+    height: 30px;
+    /*background: #f00;*/
+    position: relative;
+    top: -180px;
+    left: 970px;
+    z-index: 10;
+}
+
+#mg-program .program-swiper-button-prev {
+    width: 30px;
+    height: 30px;
+    /*background: #0f0;*/
+    position: relative;
+    top: -215px;
+    left: 0;
+    z-index: 10;
+}
+
+.program-swiper-button-next img,
+.program-swiper-button-prev img {
+    width: 26px;
+} 
+
+#mg-program .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#mg-program .swiper-slide-content {
+    /*overflow: hidden;*/
+    /*    width: 100px;
+    height: 120px;*/
+}
+
+#mg-program .swiper-slide-content img {
+    /*    width: 200px;
+    height: 240px;*/
+    width: 100%;
+    height: 100%;
+}
+
+#mg-program .program-download-btn {
+    margin: 0 auto;
+    width: 160px;
+    height: 48px;
+    background: #90bd2d;
+    text-align: center;
+}
+
+#mg-program .program-download-btn span {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+#mg-program .program-download-btn a {
+    color: #fff;
+}
+
+
+/*=========================================================
+mgxf-program end==============================================*/
+
+
+/*=========================================================
+mgxf-course start==============================================*/
+
+#mg-course {
+    background-color: #202020;
+    width: 100%;
+    height: 880px;
+    box-sizing: border-box;
+}
+
+#mg-course .mg-course {
+    height: 800px;
+    padding-top: 40px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#mg-course .mg-list {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    margin-top: 20px;
+}
+
+#mg-course .mg-list>div {
+    background: #2B2B2B;
+    width: 125px;
+    height: 445px;
+    margin: 0 3px;
+}
+
+#mg-course .mg-line {
+    border: 2px solid red;
+    display: block;
+    width: 50px;
+}
+
+#mg-course .mg-word-1 {
+    color: red;
+    font-size: 20px;
+}
+
+#mg-course .mg-word-2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+#mg-course .mg-word-3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+#mg-course li {
+    color: #fff;
+    font-size: 12px;
+    margin-top: 3px;
+    padding-left: 10px;
+    font-weight: 200px;
+}
+
+#mg-course .mg-list-first {
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+#mg-course .cred {
+    background: #C40111;
+}
+
+#mg-course .cblack {
+    background: #060606;
+}
+
+#mg-course .mg-click {
+    width: 160px;
+    height: 48px;
+    background: red;
+    text-align: center;
+    line-height: 40px;
+    margin: 0px auto 0;
+}
+
+
+/*=========================================================
+mgxf-course end==============================================*/
+
+
+/*=========================================================
+mgxf-feeling start==============================================*/
+
+#mg-feeling {
+    background: #000;
+    padding: 50px 0;
+    position: relative;
+}
+
+#mg-feeling .feeling-container {
+    margin: 0 auto;
+    background: #000;
+    position: relative;
+}
+
+#mg-feeling .feeling-title {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+
+/* 容器 */
+
+#mg-feeling .feeling-decoration {
+    width: 24px;
+    height: 487px;
+    background-size: 700px;
+    background-image: url(../images/common/Sprites.png);
+    background-position: -549px 74px;
+    position: absolute;
+    top: 50px;
+}
+
+#mg-feeling .container {
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#mg-feeling .wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#mg-feeling .mg-inner {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#mg-feeling .mg-student {
+    width: 20%;
+    height: 200px;
+    /*margin: 0 30px;*/
+    margin-left: 70px;
+    /*background: #f00;*/
+    display: flex;
+    align-items: center;
+}
+
+#mg-feeling .mg-student-introduce {
+    flex: 1;
+    height: 200px;
+    margin-left: 20px;
+    /*background: #0f0;*/
+    display: flex;
+    align-items: center;
+}
+
+#mg-feeling .mg-student-introduce p {
+    font-size: 13px;
+}
+
+#mg-feeling img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+#mg-feeling .feeling-content {
+    text-align: center;
+}
+
+#mg-feeling .feeling-content span {
+    font-weight: bold;
+}
+
+#mg-feeling .feeling-swapper {
+    margin: 40px auto;
+    background: #ccc;
+    width: 80%;
+    height: 500px;
+}
+
+#mg-feeling .feeling-button {
+    margin-top: 40px;
+    width: 160px;
+    height: 48px;
+    background: #426bb8;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#mg-feeling .feeling-button span {
+    text-align: center;
+    line-height: 45px;
+}
+
+
+/*=========================================================
+mgxf-feeling end==============================================*/
+
+
+/*=========================================================
+mgxf-company start==============================================*/
+
+#mg-company {
+    text-align: center;
+    background: #202020;
+    color: #fff;
+}
+
+#mg-company .wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+#mg-company h2 {
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+#mg-company p {
+    width: 640px;
+    padding-top: 18px;
+    margin: 0 auto;
+}
+
+#mg-company .mg-teachers {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#mg-company .mg-teachers li {
+    display: inline-block;
+    width: 19%;
+}
+
+#mg-company .mg-teachers .circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: url("../images/common/mgxf-rotate-circle.png") no-repeat 0 0 /cover;
+    position: relative;
+    animation: circle 4s infinite linear;
+    -webkit-animation: circle 4s infinite linear;
+    -moz-animation: circle 4s infinite linear;
+    -o-animation: circle 4s infinite linear;
+    /*匀速 循环*/
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-moz-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-o-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#mg-company .mg-teachers li .desc {
+    text-align: left;
+    color: #878787;
+}
+
+#mg-company .mg-teachers .pic1 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -95px;
+    left: 28px;
+    background: url("../images/company/people.png") no-repeat 0 0/cover;
+}
+
+#mg-company .mg-teachers .pic2 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -96px;
+    left: 28px;
+    background: url("../images/company/people.png") no-repeat 0 -108px/cover;
+}
+
+#mg-company .mg-teachers .pic3 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -95px;
+    left: 27px;
+    background: url("../images/company/people.png") no-repeat 0 -218px/cover;
+}
+
+#mg-company .mg-teachers .pic4 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -95px;
+    left: 28px;
+    background: url("../images/company/people.png") no-repeat 0 -328px/cover;
+}
+
+#mg-company .mg-teachers .pic5 {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: -95px;
+    left: 28px;
+    background: url("../images/company/people.png") no-repeat 0 -437px/cover;
+}
+
+#mg-company .introduce {
+    margin-top: -90px;
+}
+
+#mg-company .mg-teachers .name,
+#mg-company .mg-teachers .com {
+    margin-top: 10px;
+}
+
+#mg-company .mg-teachers .desc {
+    margin-top: 20px;
+}
+
+#mg-company .mg-cocom {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    margin: 0 auto;
+}
+
+#mg-company .mg-cocom li {
+    width: 77px;
+    height: 30px;
+}
+
+#mg-company .mg-cocom .cocom1 {
+    background: url(../images/common/Sprites.png) no-repeat -336px -10px/734%;
+}
+
+#mg-company .mg-cocom .cocom2 {
+    background: url(../images/common/Sprites.png) no-repeat -336px -47px/734%;
+}
+
+#mg-company .mg-cocom .cocom3 {
+    background: url(../images/common/Sprites.png) no-repeat -281px -67px/627%;
+}
+
+#mg-company .mg-cocom .cocom4 {
+    background: url(../images/common/Sprites.png) no-repeat -270px -89px/598%;
+}
+
+#mg-company .mg-cocom .cocom5 {
+    background: url(../images/common/Sprites.png) no-repeat -283px -118px/624%;
+}
+
+#mg-company .mg-cocom .cocom6 {
+    background: url(../images/common/Sprites.png) no-repeat -336px -180px/734%;
+}
+
+#mg-company .mg-cocom .cocom7 {
+    background: url(../images/common/Sprites.png) no-repeat -341px -210px/734%;
+}
+
+#mg-company .line1 {
+    width: 24px;
+    height: 300px;
+    position: absolute;
+    top: 12%;
+    left: 0;
+    background: url(../images/common/Sprites.png) no-repeat -565px 6px/3000%;
+}
+
+#mg-company .line2 {
+    width: 24px;
+    height: 300px;
+    position: absolute;
+    top: 12%;
+    right: 0;
+    background: url(../images/common/Sprites.png) no-repeat -565px 6px/3000%;
+}
+
+
+/*=========================================================
+mgxf-company end==============================================*/
+
+
+/*=========================================================
+mgxf-classroom start==============================================*/
+
+#mg-classroom {
+    width: 100%;
+    background: #373737;
+    color: #fff;
+}
+
+#mg-classroom .wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#mg-classroom .mg-cirle-press {
+    width: 65px;
+    height: 65px;
+    background: #f00;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+#mg-classroom .wrapper h2 {
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-top: 12px;
+}
+
+#mg-classroom .wrapper p {
+    text-align: center;
+    padding: 10px;
+}
+
+#mg-classroom .hr {
+    width: 100%;
+    height: 1px;
+    background: #f00;
+    margin: 20px 0;
+    position: relative;
+}
+
+#mg-classroom .hr .box {
+    width: 95px;
+    height: 5px;
+    background: #f00;
+    position: absolute;
+    top: -2px;
+    animation: myfourth 4s linear .01s infinite alternate;
+    /* Firefox: */
+    -moz-animation: myfourth 4s linear .01s infinite alternate;
+    /* Safari and Chrome: */
+    -webkit-animation: myfourth 4s linear .01s infinite alternate;
+    /* Opera: */
+    -o-animation: myfourth 4s linear .01s infinite alternate;
+}
+
+@keyframes myfourth {
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+@-moz-keyframes myfourth
+/* Firefox */
+
+{
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+@-webkit-keyframes myfourth
+/* Safari and Chrome */
+
+{
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+@-o-keyframes myfourth
+/* Opera */
+
+{
+    0% {
+        left: 0px;
+        top: -3px;
+    }
+    50% {
+        left: 865px;
+        top: -3px;
+    }
+    100% {
+        left: 0px;
+        top: -3px;
+    }
+}
+
+#mg-classroom .mg-picbox {
+    padding: 40px 0;
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#mg-classroom .mg-picbox .dialogred {
+    position: absolute;
+    top: 6px;
+    left: 30px;
+    z-index: 10;
+    width: 140px;
+    height: 220px;
+}
+
+#mg-classroom .mg-picbox p {
+    text-align: left;
+    position: absolute;
+    font-weight: bold;
+    letter-spacing: 3px;
+    top: 67px;
+    left: 39px;
+    z-index: 11;
+}
+
+#mg-classroom .mg-picbox .pictop {
+    width: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    padding-top: 40px;
+}
+
+#mg-classroom .mg-picbox .picbottom {
+    width: 960px;
+    margin: 0 auto;
+    z-index: 0;
+    position: absolute;
+    top: 225px;
+    padding-top: 40px;
+}
+
+
+/*=========================================================
+mgxf-classroom end==============================================*/
+
+
+/*=========================================================
+mgxf-apply start==============================================*/
+
+#mg-apply {
+    background-color: #0C0C0C;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+#mg-apply .mg-apply {
+    height: 400px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#mg-apply .mg-apply>div {
+    float: left;
+    margin: 50px 30px;
+}
+
+#mg-apply .mg-apply-left {
+    width: 480px;
+    height: 250px;
+    background: #F5F3F0;
+}
+
+
+/*右侧样式*/
+
+#mg-apply .mg-apply-right {
+    width: 320px;
+    height: 200px;
+}
+
+#mg-apply .font13 {
+    color: #fefefe;
+}
+
+#mg-apply .phone {
+    text-align: justify;
+}
+
+#mg-apply .immed-1,
+.immed-2 {
+    color: #fff;
+}
+
+#mg-apply .immed-2 {
+    width: 130px;
+    height: 36px;
+    background: green;
+    margin-top: 47px;
+}
+
+#mg-apply .immed-2 p {
+    text-align: center;
+    line-height: 36px;
+}
+
+#mg-apply .mg-apply-login input {
+    background: #94c32f;
+    padding-left: 5px;
+    width: 155px;
+    height: 20px;
+}
+
+#mg-apply .mg-apply-login p {
+    margin-top: 5px;
+}
+
+#mg-apply .mg-article {
+    display: flex;
+}
+
+#mg-apply .mg-left ul li {
+    margin-top: 12px;
+}
+
+#mg-apply .mr-right {
+    margin-left: 10px;
+    margin-top: 1px;
+}
+
+#mg-apply .mr-right ul li {
+    margin-top: 8px;
+}
+
+
+/*=========================================================
+mgxf-apply end==============================================*/
+
+
+/*=========================================================
+mgxf-footer start==============================================*/
+
+
+/*=========================================================
+mgxf-footer end==============================================*/
