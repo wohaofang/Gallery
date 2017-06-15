@@ -1,0 +1,168 @@
+/*=================================================
+normalize start
+===================================================*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    font: 400 14px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", tahoma, sans-serif;
+    color: #666;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Hiragino Sans GB", " Microsoft YaHei", "WenQuanYi Micro Hei", arial, sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+.w-1170 {
+    width: 1170px;
+}
+
+.w-980 {
+    width: 980px; 
+}
+
+.f1-b,
+.f2-b,
+.f3-b {
+    font-weight: 700;
+}
+
+.f1,
+.f1-b {
+    font-size: 12px;
+}
+
+.f2,
+.f2-b {
+    font-size: 14px;
+}
+
+.f3,
+.f3-b {
+    font-size: 16px;
+}
+
+.f4 {
+    font-size: 18px;
+}
+
+.f5 {
+    font-size: 28px;
+}
+
+
+.cf::after {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+/*=================================================
+normalize end
+===================================================*/
+
+
+/*==================================================
+common start
+===================================================*/
+
+
+/**/
+
+
+/*==================================================
+common end
+===================================================*/
