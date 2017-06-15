@@ -1,0 +1,15 @@
+header .container{
+	height: 60px;
+}
+header .navbar-brand img{
+	width: 109px;
+	height: 40px;
+	float: left;
+}
+header .logo {
+    width: 109px;
+    display: inline-block;
+    margin-right: 60px;
+    height: 60px;
+    float: left;
+}
