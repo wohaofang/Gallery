@@ -1,0 +1,675 @@
+/*============左侧音乐==============*/
+
+.content-ll {
+    margin-right: 271px;
+    padding: 47px 30px 40px 39px;
+}
+
+.cantainer {
+    position: relative;
+}
+
+.cantainer-img {
+    width: 198px;
+    height: 204px;
+    /*background:#ccc;*/
+}
+
+.cantainer-l {
+    position: relative;
+    width: 204px;
+}
+
+.cantainer-l a {
+    display: inline-block;
+    float: left;
+    margin: 20px 0 0 46px;
+    text-decoration: underline;
+    color: #0c73c2;
+}
+
+.cantainer-img span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/singlecover.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.cantainer-img img {
+    position: absolute;
+    top: 38px;
+    left: 38px;
+    display: block;
+    border-radius: 40%;
+}
+
+
+/*============右侧音乐==============*/
+
+.cantainer-r {
+    float: right;
+    width: 414px;
+    /*background: #ccc;*/
+    margin-top: -191px;
+}
+
+.cantainer-r .hd i {
+    display: inline-block;
+    background: url(../img/icon.png) no-repeat 0 9999px;
+    background-position: 0 -463px;
+    width: 54px;
+    height: 24px;
+    overflow: hidden;
+    vertical-align: middle
+}
+
+.cantainer-r .hd p {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+
+.cantainer-r .hd a {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/icon.png) no-repeat 0 9999px;
+    width: 21px;
+    height: 18px;
+    background-position: 0 -18px;
+    overflow: hidden;
+}
+
+.hd-p {
+    color: #999;
+    margin: 10px 0;
+}
+
+.hd-p span {
+    color: #0c73c2;
+}
+
+.btn {
+    margin: 0 0 10px 0;
+}
+
+.btn-1 {
+    background: url(../img/button2.png) no-repeat 0 9999px;
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+    /*padding: 0 5px 0 0;*/
+    /*white-space: nowrap;*/
+    float: left;
+}
+
+.btn-1 i {
+    background: url(../img/button2.png) no-repeat 0 9999px;
+    display: inline-block;
+    height: 31px;
+    line-height: 31px;
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-position: 0 -387px;
+    padding: 0 7px 0 8px;
+}
+
+.btn-1 i em {
+    background: url(../img/button2.png) no-repeat 0 9999px;
+    float: left;
+    width: 20px;
+    height: 18px;
+    margin: 6px 2px 2px 0;
+    background-position: 0 -1622px;
+    overflow: hidden;
+}
+
+.btn-2 {
+    background: url(../img/button2.png) no-repeat 0 9999px;
+    padding: 0 5px 0 0;
+    float: left;
+    height: 31px;
+    line-height: 30px;
+    min-width: 23px;
+    cursor: pointer;
+    width: 31px;
+    margin-left: -3px;
+    padding-right: 0;
+    background-position: 0 -1588px;
+    margin-right: 5px;
+}
+
+.btn .btna {
+    display: inline-block;
+    padding:5px 12px;
+    background: #F4F4F4;
+    border-radius: 5px;
+    color: #000;
+    margin: 0 5px;
+    border: 1px solid #C4C4C4;
+}
+
+.btn .btna:hover {
+    background: #fff;
+}
+
+
+.text {
+    margin-top: 13px;
+    line-height: 23px;
+    display: inline-block;
+}
+
+
+/*================评论区==================*/
+
+.comment {
+    margin-top: 40px;
+}
+
+.comment-top {
+    border-bottom: 2px solid #c20c0c;
+    padding-bottom: 15px;
+}
+
+.comment-top p {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.comment-top span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    color: #666;
+}
+.comment-middle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.head-a{
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+.head-a img{
+    width: 100%;
+    height: 100%;
+}
+.com-content{
+    margin-left:70px;
+    position: relative;
+}
+.com-content textarea{
+    height: 55px;
+    width: 100%;
+    margin: 0;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+        resize: none;
+    overflow: auto;
+    /*margin-left: 16px;*/
+    outline: none;
+}
+.com-btn{
+    width: 578px;
+    height: 35px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.com-btns .icn1{
+    display: inline-block;
+        width: 18px;
+    height: 18px;
+        background: url(../img/icon.png) no-repeat 0 9999px;
+            margin-right: 11px;
+            background-position: -40px -490px;
+       
+
+    }
+
+.com-btns .icn2{
+    display: inline-block;
+        width: 18px;
+    height: 18px;
+        background: url(../img/icon.png) no-repeat 0 9999px;
+            margin-right: 11px;
+            background-position: -60px -490px;
+       
+
+    }
+    .com-btns span{
+    display: inline-block;
+    margin-right: 10px;
+        color: #999;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+    .com-btns .icn3{
+    display: inline-block;
+        width: 46px;
+    height: 25px;
+    background: url(../img/button.png) no-repeat 0 9999px;
+    background-position: -84px -64px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+     font-size: 12px;
+        vertical-align: middle;
+
+}
+.com-jj{
+        position: absolute;
+        top: 5px;
+    left: -4px;
+        width: 13px;
+    height: 14px;
+    overflow: hidden;
+}
+.arrline {
+    color: #cdcdcd;
+    display: block;
+    font-size: 15px;
+    height: 10px;
+        font-style: normal;
+    text-align: left;
+}
+.arrclr {
+    margin: -10px 0 0 1px;
+    display: block;
+    font-size: 15px;
+    height: 10px;
+    color: #fff;
+}
+.comment-bottom h3{
+        border-bottom: 1px solid #999;
+    font-size: 12px;
+    color: #000;
+    padding-bottom: 9px;
+}
+.comment-bottom>div{
+        padding: 15px 0;
+    border-bottom: 1px dotted #ccc;
+
+}
+.head-b{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.head-b img{
+    width: 100%;
+    height: 100%;
+}
+.user{
+    margin-left: 60px;
+    font-size: 12px;
+    color: #000;
+}
+.user-s a{
+    color: #0c73c2;
+}
+.user-x{
+    display: flex;
+    justify-content: space-between;
+        margin-top: 20px;
+}
+.user-xz{
+    color: #999;
+}
+.user-xy{
+    color: #333;
+    cursor: pointer;
+
+}
+.user-xy i{
+        position: relative;
+    top: -1px;
+    background: url(../img/icon2.png) no-repeat 0 9999px;
+        display: inline-block;
+            width: 20px;
+    height: 14px;
+    background-position: -150px 0;
+        /*margin-top: -4px;*/
+        vertical-align: middle;
+}
+.user-xy span{
+        margin: 0 8px;
+    color: #7e7474;
+}
+#u-page{
+        margin: 20px 0;
+    text-align: center;
+    border-bottom:  none;
+}
+#u-page .page1{
+        color: #cacaca;
+            width: 47px;
+   
+    height: 24px;
+    line-height: 24px;
+    
+    text-align: left;
+    padding: 0;
+        margin: 0 1px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+        padding-left: 22px;
+}
+#u-page .page2{
+    margin: 0 1px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+        height: 22px;
+    padding: 0 8px;
+    background-color: #fff;
+    line-height: 22px;
+        color: #333;
+}
+#u-page .page2:hover{
+    border: 1px solid #000;
+}
+#u-page .page3{
+        color: #cacaca;
+            width: 47px;
+   
+    height: 24px;
+    line-height: 24px;
+    
+    text-align: left;
+    padding: 0 22px 0 3px;
+        margin: 0 2px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+        /*padding-right: 22px;*/
+            color: #333;
+}
+#u-page .pages{
+         border-color: #A2161B; 
+         background: #d71016;
+}
+
+/*===================版权=========================*/
+#copyright{
+        position: relative;
+    height: 125px;
+    overflow: hidden;
+    border-top: 1px solid #d5d5d5;
+    background: #f9f9f9;
+}
+.w980{
+    width: 980px;
+    margin: 0 auto;
+    height: 125px;
+}
+.copy-a{
+        background: url(../img/sprite.png) no-repeat 0 9999px;
+
+            float: left;
+    width: 247px;
+    height: 46px;
+    margin: 29px 0 0 0;
+   
+    padding-left: 53px;
+    background-position: -400px -80px;
+    line-height: 22px;
+}
+ .copy-sp1{
+    color: #666;
+    font-size: 12px;
+}
+.copy-sp2{
+    color: #999;
+    font-size: 12px;
+}
+.copy-b{
+        background: url(../img/sprite.png) no-repeat 0 9999px;
+
+            float: left;
+    width: 247px;
+    height: 46px;
+    margin: 29px 0 0 0;
+   
+    padding-left: 53px;
+    background-position: -400px -125px;
+    line-height: 22px;
+}
+.copy-r{
+    font-size: 12px;
+    color: #9b9b9b;
+    float: right;
+    margin-left: -20px;
+    width: auto;
+        padding-top: 29px;
+    line-height: 22px;
+}
+
+.copy-r a{
+        color: #666;
+
+}
+.zuihou{
+    float: right;
+}
+.zuihou i{
+        background: url(../img/icon.png) no-repeat 0 9999px;
+            display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+        width: 19px;
+    height: 16px;
+    background-position: 0 -39px;
+    margin-right: 3px;
+}
+/*======================底部音乐======================*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 100%;
+    z-index: 1002;
+}
+
+.footer-a {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 53px;
+    margin: 0 auto;
+    transition: all .5s ease;
+}
+
+.footer-a:hover {
+    position: absolute;
+    top: -53px;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.suozi {
+    position: relative;
+    z-index: 11;
+}
+
+.suozi-l {
+    cursor: pointer;
+    background: url(../img/playbar.png) no-repeat 0 9999px;
+    position: absolute;
+    top: -14px;
+    right: 15px;
+    width: 52px;
+    height: 67px;
+    background-position: 0 -380px;
+}
+
+.suozi-l i {
+    background: url(../img/playbar.png) no-repeat 0 9999px;
+    background-position: -80px -380px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 6px 0 0 17px;
+}
+
+.suozi-r {
+    background: url(../img/playbar.png) no-repeat 0 9999px;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 15px;
+    height: 54px;
+    background-position: -52px -393px;
+    pointer-events: none;
+}
+
+.footer-a .bg {
+    background: url(../img/playbar.png) no-repeat 0 9999px;
+    height: 53px;
+    zoom: 1;
+    margin-right: 67px;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+}
+
+#music {
+    position: absolute;
+    left: 13.7%;
+    top: 6px;
+    z-index: 15;
+    width: 1050px;
+    height: 47px;
+    margin: 0 auto;
+    /*background: #dfd;*/
+}
+
+.music-btns {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    padding: 2px;
+    background: #594f4f;
+    border: 1px solid #595454;
+    border-radius: 3px;
+    outline: yellowgreen;
+        border: none;
+}
+.btn-play{
+    display: none;
+       background: url(../img/playbar.png) no-repeat 0 9999px; 
+           text-indent: -9999px;
+               margin-right: 8px;
+               /*display: block;*/
+                   width: 36px;
+    height: 36px;
+    margin-top: 0;
+        background-position: 0 -204px;
+}
+.btn-play:hover{
+        background-position: -40px -204px;
+}
+.btn-zt{
+    
+       background: url(../img/playbar.png) no-repeat 0 9999px; 
+           text-indent: -9999px;
+               margin-right: 8px;
+               /*display: block;*/
+                   width: 36px;
+    height: 36px;
+    margin-top: 0;
+           background-position: 0px -165px;
+}
+.btn-zt:hover{
+        background-position: -40px -165px;
+}
+.btn-sys{
+    background: url(../img/playbar.png) no-repeat 0 9999px; 
+           background-position: 0 -130px;
+           width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: 5px;
+    text-indent: -9999px;
+}
+.btn-sys:hover{
+    background-position: -30px -130px;
+}
+.btn-xys{
+    background: url(../img/playbar.png) no-repeat 0 9999px;
+        background-position: -80px -130px; 
+           width: 28px;
+    height: 28px;
+    margin-right: 8px;
+    margin-top: 5px;
+    text-indent: -9999px;
+}
+.btn-xys:hover{
+    background-position: -110px -130px;
+}
+
+.music-tx {
+    vertical-align: middle;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #000;
+    box-shadow: 0 0 2px #000;
+    margin: 0 9px 0 41px;
+}
+
+.music-tx img {
+    width: 100%;
+    height: 100%;
+}
+
+.music-jd {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/*================去顶部=================*/
+#to-top{
+    display: block;
+    position: fixed;
+    left: 50%;
+    bottom: 160px;
+    margin-left: 500px;
+    width: 49px;
+    height: 44px;
+    background: url(../img/sprite.png) no-repeat 0 9999px;
+    background-position: -265px -47px;
+}
+#to-top:hover{
+    background-position: -325px -47px;
+}

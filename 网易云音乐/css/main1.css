@@ -1,0 +1,418 @@
+/*============左侧音乐==============*/
+
+.content-ll {
+    margin-right: 271px;
+    padding: 47px 30px 40px 39px;
+}
+
+
+/*==================视频========================*/
+
+.cantainer .name {
+    padding-top: 10px;
+    margin-bottom: 8px;
+}
+
+.name h2 {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: -10px;
+    margin-right: 8px;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.name span {
+    display: inline-block;
+    font-size: 12px;
+    color: #0c73c2;
+    cursor: pointer;
+}
+
+.mv {
+    position: relative;
+    width: 640px;
+    height: 395px;
+    background-color: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    border-left: none;
+}
+
+.mv-div {
+    width: 640px;
+    height: 35px;
+    background: #c39292;
+    position: absolute;
+    bottom: 0;
+}
+
+.mv-div button {
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    padding: 4px;
+        margin-left: 25px;
+    margin-top: 4px;
+    border-radius: 3px;
+    border: 1px solid #f1f5f7;
+    background: #ddd;
+    box-shadow: 1px 1px 3px #000 inset;
+}
+.mv-div button:hover{
+    background: #fff;
+}
+
+
+/*================评论区==================*/
+
+.comment {
+    margin-top: 40px;
+}
+
+.comment-top {
+    border-bottom: 2px solid #c20c0c;
+    padding-bottom: 15px;
+}
+
+.comment-top p {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.comment-top span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    color: #666;
+}
+
+.comment-middle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.head-a {
+    width: 55px;
+    height: 55px;
+    float: left;
+}
+
+.head-a img {
+    width: 100%;
+    height: 100%;
+}
+
+.com-content {
+    margin-left: 70px;
+    position: relative;
+}
+
+.com-content textarea {
+    height: 55px;
+    width: 100%;
+    margin: 0;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    resize: none;
+    overflow: auto;
+    /*margin-left: 16px;*/
+    outline: none;
+}
+
+.com-btn {
+    width: 578px;
+    height: 35px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.com-btns .icn1 {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/icon.png) no-repeat 0 9999px;
+    margin-right: 11px;
+    background-position: -40px -490px;
+}
+
+.com-btns .icn2 {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/icon.png) no-repeat 0 9999px;
+    margin-right: 11px;
+    background-position: -60px -490px;
+}
+
+.com-btns span {
+    display: inline-block;
+    margin-right: 10px;
+    color: #999;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.com-btns .icn3 {
+    display: inline-block;
+    width: 46px;
+    height: 25px;
+    background: url(../img/button.png) no-repeat 0 9999px;
+    background-position: -84px -64px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+.com-jj {
+    position: absolute;
+    top: 5px;
+    left: -4px;
+    width: 13px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.arrline {
+    color: #cdcdcd;
+    display: block;
+    font-size: 15px;
+    height: 10px;
+    font-style: normal;
+    text-align: left;
+}
+
+.arrclr {
+    margin: -10px 0 0 1px;
+    display: block;
+    font-size: 15px;
+    height: 10px;
+    color: #fff;
+}
+
+.comment-bottom h3 {
+    border-bottom: 1px solid #999;
+    font-size: 12px;
+    color: #000;
+    padding-bottom: 9px;
+}
+
+.comment-bottom>div {
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.head-b {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.head-b img {
+    width: 100%;
+    height: 100%;
+}
+
+.user {
+    margin-left: 60px;
+    font-size: 12px;
+    color: #000;
+}
+
+.user-s a {
+    color: #0c73c2;
+}
+
+.user-x {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user-xz {
+    color: #999;
+}
+
+.user-xy {
+    color: #333;
+    cursor: pointer;
+}
+
+.user-xy i {
+    position: relative;
+    top: -1px;
+    background: url(../img/icon2.png) no-repeat 0 9999px;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    background-position: -150px 0;
+    /*margin-top: -4px;*/
+    vertical-align: middle;
+}
+
+.user-xy span {
+    margin: 0 8px;
+    color: #7e7474;
+}
+
+#u-page {
+    margin: 20px 0;
+    text-align: center;
+    border-bottom: none;
+}
+
+#u-page .page1 {
+    color: #cacaca;
+    width: 47px;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding: 0;
+    margin: 0 1px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding-left: 22px;
+}
+
+#u-page .page2 {
+    margin: 0 1px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    height: 22px;
+    padding: 0 8px;
+    background-color: #fff;
+    line-height: 22px;
+    color: #333;
+}
+
+#u-page .page2:hover {
+    border: 1px solid #000;
+}
+
+#u-page .page3 {
+    color: #cacaca;
+    width: 47px;
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding: 0 22px 0 3px;
+    margin: 0 2px 0 2px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    /*padding-right: 22px;*/
+    color: #333;
+}
+
+#u-page .pages {
+    border-color: #A2161B;
+    background: #d71016;
+}
+
+
+/*===================版权=========================*/
+
+#copyright {
+    position: relative;
+    height: 125px;
+    overflow: hidden;
+    border-top: 1px solid #d5d5d5;
+    background: #f9f9f9;
+}
+
+.w980 {
+    width: 980px;
+    margin: 0 auto;
+    height: 125px;
+}
+
+.copy-a {
+    background: url(../img/sprite.png) no-repeat 0 9999px;
+    float: left;
+    width: 247px;
+    height: 46px;
+    margin: 29px 0 0 0;
+    padding-left: 53px;
+    background-position: -400px -80px;
+    line-height: 22px;
+}
+
+.copy-sp1 {
+    color: #666;
+    font-size: 12px;
+}
+
+.copy-sp2 {
+    color: #999;
+    font-size: 12px;
+}
+
+.copy-b {
+    background: url(../img/sprite.png) no-repeat 0 9999px;
+    float: left;
+    width: 247px;
+    height: 46px;
+    margin: 29px 0 0 0;
+    padding-left: 53px;
+    background-position: -400px -125px;
+    line-height: 22px;
+}
+
+.copy-r {
+    font-size: 12px;
+    color: #9b9b9b;
+    float: right;
+    margin-left: -20px;
+    width: auto;
+    padding-top: 29px;
+    line-height: 22px;
+}
+
+.copy-r a {
+    color: #666;
+}
+
+.zuihou {
+    float: right;
+}
+
+.zuihou i {
+    background: url(../img/icon.png) no-repeat 0 9999px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 19px;
+    height: 16px;
+    background-position: 0 -39px;
+    margin-right: 3px;
+}
+
+
+/*================去顶部=================*/
+
+#to-top {
+    display: block;
+    position: fixed;
+    left: 50%;
+    bottom: 160px;
+    margin-left: 500px;
+    width: 49px;
+    height: 44px;
+    background: url(../img/sprite.png) no-repeat 0 9999px;
+    background-position: -265px -47px;
+}
+
+#to-top:hover {
+    background-position: -325px -47px;
+}
