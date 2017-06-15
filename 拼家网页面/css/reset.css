@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,form,input,p{margin:0; padding:0;}
+body{font:14px "arial";background:#fff;}
+img{border:0;}
+li{ list-style:none;}
+a{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{ font-size:100%;}
+em{ font-style:normal;}
+input,button,select,textarea{ outline:none;}
+textarea{resize:none;}
+
